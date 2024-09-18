@@ -617,6 +617,8 @@
                   </div>
                 </div>
 
+                <input type="hidden" name="url" />
+
                 <button
                   type="submit"
                   class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white transition-all duration-200 bg-[#821f48] border border-transparent rounded-xl hover:bg-[#b02f65] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#b02f65]"
@@ -629,6 +631,11 @@
         </div>
       </div>
     </section>
+
+    <script>
+      const url = window.location.href;
+      document.querySelector('input[name="url"]').value = url;
+    </script>
 
     <!-- FOOTER -->
 
