@@ -159,7 +159,11 @@
                         </button>
                       </div>
 
-                      <form action="#" method="POST" class="p-6">
+                      <form
+                        action="https://superstorm-rest-italianne.oofut8.easypanel.host/save/google/sheets/whatsapp"
+                        method="POST"
+                        class="p-6"
+                      >
                         <div class="space-y-4">
                           <div>
                             <label
@@ -511,7 +515,11 @@
 
           <div class="bg-white shadow-xl rounded-2xl">
             <div class="p-6 sm:p-10">
-              <form action="#" method="POST" class="space-y-6">
+              <form
+                action="https://superstorm-rest-italianne.oofut8.easypanel.host/send/email"
+                method="POST"
+                class="space-y-6"
+              >
                 <div>
                   <label
                     for="fullName"
@@ -574,13 +582,15 @@
                     Grau de parentesco
                   </label>
                   <div class="mt-2">
-                    <input
-                      type="tel"
-                      name="tel"
-                      id="tel"
-                      placeholder="Selecione o grau de parentesco"
-                      class="block w-full px-4 py-4 text-base text-gray-900 bg-white border border-gray-200 rounded-xl focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
-                    />
+                    <select
+                      class="block appearance-none w-full bg-white border border-gray-200 hover:border-gray-500 px-4 py-4 pr-8 rounded-xl leading-tight focus:outline-none"
+                    >
+                      <option>
+                        Really long option that will likely overlap the chevron
+                      </option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                    </select>
                   </div>
                 </div>
 
@@ -593,8 +603,8 @@
                   </label>
                   <div class="mt-2">
                     <textarea
-                      name="obs"
-                      id="obs"
+                      name="observacoes"
+                      id="observacoes"
                       placeholder="Digite aqui suas observações..."
                       rows="2"
                       class="block w-full px-4 py-4 text-base text-gray-900 bg-white border border-gray-200 resize-y rounded-xl focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
