@@ -4,9 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Obrigado | Italianne - Consultoria e Assessoria para Cidadania Italiana
-    </title>
+    <title>Italianne - Consultoria e Assessoria para Cidadania Italiana</title>
   </head>
 
   <body>
@@ -56,13 +54,183 @@
                 <h1
                   class="text-5xl font-bold leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:leading-tight lg:text-6xl font-pj"
                 >
-                  Obrigado!
+                  Consultoria e Assessoria para Cidadania Italiana
                 </h1>
                 <p
                   class="mb-2 text-md sm:text-lg text-gray-600 mt-4 sm:mt-3 sm:mb-4 font-inter"
                 >
-                  Recebemos suas informações e em breve entraremos em contato.
+                  Ajudamos você a conquistar sua cidadania italiana de forma
+                  rápida e segura, com consultoria especializada e assessoria
+                  completa para cada etapa do processo.
                 </p>
+              </div>
+
+              <div class="flex">
+                <a
+                  href="#contato"
+                  class="inline-flex mt-5 items-center justify-center px-6 py-3 text-base font-medium text-white transition-all duration-200 bg-[#821f48] border border-transparent rounded-xl hover:bg-[#b02f65] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#b02f65]"
+                >
+                  Solicitar pré-análise
+                </a>
+
+                <div x-data="{ open: false }" class="relative z-10">
+                  <!-- Botão para abrir o modal -->
+                  <button
+                    @click="open = true"
+                    style="z-index: 9999"
+                    class="fixed z-50 p-3 text-center font-semibold text-white bg-[#25d366] rounded-full bottom-5 right-5 hover:bg-[#5cee93] shadow-lg"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-8 w-8"
+                      fill="#fff"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
+                      />
+                    </svg>
+                  </button>
+
+                  <button
+                    @click="open = !open"
+                    class="inline-flex mt-5 ms-5 items-center justify-center px-6 py-3 text-base font-medium text-white transition-all duration-200 bg-[#25d366] border border-transparent rounded-xl hover:bg-[#5cee93] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#5cee93]"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 me-3"
+                      fill="#fff"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
+                      />
+                    </svg>
+
+                    Falar pelo WhatsApp
+                  </button>
+
+                  <!-- Modal Background -->
+                  <div
+                    x-show="open"
+                    class="fixed inset-0 z-20 bg-gray-800 bg-opacity-75 transition-opacity"
+                    @click="open = false"
+                  ></div>
+
+                  <!-- Modal -->
+                  <div
+                    x-show="open"
+                    x-transition
+                    class="fixed inset-0 z-30 flex items-center justify-center p-4 overflow-y-auto"
+                  >
+                    <div
+                      class="relative w-full max-w-sm p-0 bg-[url(https://superstorm-landingpage-italianne.oofut8.easypanel.host/bgWhatsapp.DxGV9uq9.png)] bg-contain shadow-lg rounded-xl"
+                      @click.away="open = false"
+                    >
+                      <!-- Modal Header -->
+                      <div
+                        class="flex items-center bg-[#075e54] rounded-tr-xl rounded-tl-xl justify-between p-4 border-b"
+                      >
+                        <div class="flex items-center">
+                          <img
+                            class="h-8 mr-3"
+                            src="https://superstorm-landingpage-italianne.oofut8.easypanel.host/ws-logo-h.CqoXHKBU_ZxEsbS.png"
+                          />
+                          <h2 class="text-lg font-bold text-white">WhatsApp</h2>
+                        </div>
+                        <button
+                          @click="open = false"
+                          class="p-2 text-gray-300 hover:text-gray-700"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-6 h-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M6 18L18 6M6 6l12 12"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+
+                      <form
+                        action="https://superstorm-rest-italianne.oofut8.easypanel.host/save/google/sheets/whatsapp"
+                        method="POST"
+                        class="p-6"
+                      >
+                        <div class="space-y-4">
+                          <div>
+                            <label
+                              for="name"
+                              class="text-sm font-bold text-gray-900"
+                              >Nome</label
+                            >
+                            <div class="mt-1">
+                              <input
+                                type="text"
+                                id="nameWhatsapp"
+                                name="nameWhatsapp"
+                                placeholder=""
+                                class="block w-full px-4 py-3 placeholder-gray-500 border border-gray-300 rounded-lg focus:ring-indigo-600 focus:border-indigo-600 sm:text-sm caret-indigo-600"
+                              />
+                            </div>
+                          </div>
+
+                          <div>
+                            <label
+                              for="email"
+                              class="text-sm font-bold text-gray-900"
+                              >E-mail</label
+                            >
+                            <div class="mt-1">
+                              <input
+                                type="email"
+                                id="emailWhatsapp"
+                                name="emailWhatsapp"
+                                placeholder=""
+                                class="block w-full px-4 py-3 placeholder-gray-500 border border-gray-300 rounded-lg focus:ring-indigo-600 focus:border-indigo-600 sm:text-sm caret-indigo-600"
+                              />
+                            </div>
+                          </div>
+
+                          <div>
+                            <label
+                              for="role"
+                              class="text-sm font-bold text-gray-900"
+                              >Número do WhatsApp</label
+                            >
+                            <div class="mt-1">
+                              <input
+                                type="tel"
+                                id="whatsappWhatsapp"
+                                name="whatsappWhatsapp"
+                                placeholder=""
+                                class="block w-full px-4 py-3 placeholder-gray-500 border border-gray-300 rounded-lg focus:ring-indigo-600 focus:border-indigo-600 sm:text-sm caret-indigo-600"
+                              />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-end mt-5 space-x-4"
+                        >
+                          <button
+                            type="submit"
+                            class="px-6 py-3 text-base font-semibold text-white bg-[#128c7e] rounded-md hover:bg-[#075e54]"
+                          >
+                            Iniciar chat
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -77,6 +245,397 @@
         </div>
       </section>
     </div>
+
+    <!-- MEIO -->
+
+    <section class="py-10 bg-white sm:py-16 lg:py-24">
+      <div class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+        <div class="grid items-center md:grid-cols-2 gap-y-10 md:gap-x-20">
+          <div class="pr-12 flex justify-center sm:pr-0 order-2 sm:order-1">
+            <div class="relative max-w-xs mb-12">
+              <img class="object-bottom rounded-md" src="italia.jpg" alt="" />
+              <img
+                class="absolute origin-bottom-right scale-75 rounded-md -bottom-12 -right-12"
+                src="https://cdn.bannerbuzz.co.nz/media/catalog/product/resize/650/n/0/n0_bbitf01_2_uk.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div>
+            <p class="text-base text-red-800 mb-3">
+              Benefícios como cidadão italiano
+            </p>
+            <h2
+              class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl"
+            >
+              Na Italianne, cada família tem sua história continuada
+            </h2>
+            <h3 class="mt-4">
+              Quando você finalizar o processo, poderá usufruir dos seus
+              direitos enquanto cidadão italiano!
+            </h3>
+
+            <ul class="flex flex-col mt-8 space-y-4">
+              <li class="inline-flex items-center space-x-2">
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-base font-medium text-gray-900">
+                  Ter dupla cidadania;
+                </span>
+              </li>
+
+              <li class="inline-flex items-center space-x-2">
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-base font-medium text-gray-900">
+                  Transmitir a cidadania italiana aos descendentes;
+                </span>
+              </li>
+
+              <li class="inline-flex items-center space-x-2">
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-base font-medium text-gray-900">
+                  Trabalhar de forma regular na União Européia (UE);
+                </span>
+              </li>
+
+              <li class="inline-flex items-center space-x-2">
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-base font-medium text-gray-900">
+                  Residir em toda Itália e UE pelo tempo que quiser;
+                </span>
+              </li>
+
+              <li class="inline-flex items-center space-x-2">
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-base font-medium text-gray-900">
+                  Estudar em Universidades com custo até 3x menor;
+                </span>
+              </li>
+
+              <li class="inline-flex items-center space-x-2">
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-base font-medium text-gray-900">
+                  Usufruir de bolsas de estudos;
+                </span>
+              </li>
+
+              <li class="inline-flex items-center space-x-2">
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-base font-medium text-gray-900">
+                  Acesso facilitado para visto de investidor nos EUA;
+                </span>
+              </li>
+
+              <li class="inline-flex items-center space-x-2">
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-base font-medium text-gray-900">
+                  Entrar em 188 países sem necessidade de visto.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+
+    <section
+      class="py-10 bg-gradient-to-b from-green-50 to-gray-50 sm:py-16 lg:py-24"
+    >
+      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="max-w-2xl mx-auto text-center">
+          <h2
+            class="text-3xl font-bold leading-tight text-gray-800 sm:text-4xl lg:text-5xl"
+          >
+            Depoimentos
+          </h2>
+        </div>
+
+        <div
+          class="grid max-w-xl grid-cols-1 mx-auto mt-8 text-center lg:max-w-full sm:mt-12 lg:mt-20 lg:grid-cols-3 gap-x-6 xl:gap-x-12 gap-y-6"
+        >
+          <div class="overflow-hidden bg-white rounded-md shadow">
+            <div class="px-8 py-12">
+              <blockquote class="mt-7">
+                <p class="text-lg text-black">
+                  "Quando eu era criança me contaram que o mundo é um lugar
+                  gigante e muito lindo para se conhecer. A vida vai passando e
+                  quando somos adultos nos esquecemos dessas palavras. Com a
+                  Italianne eu pude resgatar esse sonho”
+                </p>
+              </blockquote>
+              <p class="text-base font-semibold text-green-800 mt-9">
+                Cristina Dal Posso
+              </p>
+            </div>
+          </div>
+
+          <div class="overflow-hidden bg-white rounded-md shadow">
+            <div class="px-8 py-12">
+              <blockquote class="mt-7">
+                <p class="text-lg text-black">
+                  “A Italianne foi sem sobra de dúvidas a melhor escolha para
+                  conduzir meu processo de cidadania Italiana, sempre com muita
+                  transparência, atenção e carinho!”
+                </p>
+              </blockquote>
+              <p class="text-base font-semibold text-green-800 mt-9">
+                Guilherme Borin
+              </p>
+            </div>
+          </div>
+
+          <div class="overflow-hidden bg-white rounded-md shadow">
+            <div class="px-8 py-12">
+              <blockquote class="mt-7">
+                <p class="text-lg text-black">
+                  “Italianne tem sido excelente. Desde os primeiros contatos
+                  percebi o cuidado e rigor com que o trabalho é desenvolvido.
+                  As informações foram sempre claras e sabíamos desde o início o
+                  que esperar do processo inteiro.”
+                </p>
+              </blockquote>
+              <p class="text-base font-semibold text-green-800 mt-9">
+                Adriana Karam
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+
+    <section id="contato" class="py-12 bg-gray-50 sm:py-16 lg:py-20 xl:py-24">
+      <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-y-12 lg:gap-x-16 xl:gap-x-36"
+        >
+          <div class="flex flex-col self-stretch justify-between">
+            <div class="flex-1">
+              <h2
+                class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
+              >
+                Faça uma pré-análise
+              </h2>
+              <p
+                class="mt-4 text-base font-normal leading-7 text-gray-600 lg:text-lg lg:mt-6 lg:leading-8"
+              >
+                O que você decide hoje influência no amanhã das próximas
+                gerações. Coloque seus dados e em breve entraremos em contato.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white shadow-xl rounded-2xl">
+            <div class="p-6 sm:p-10">
+              <form
+                action="https://superstorm-rest-italianne.oofut8.easypanel.host/send/email"
+                method="POST"
+                class="space-y-6"
+              >
+                <div>
+                  <label
+                    for="fullName"
+                    class="text-base font-medium text-gray-900"
+                  >
+                    Nome
+                  </label>
+                  <div class="mt-2">
+                    <input
+                      type="text"
+                      name="fullName"
+                      id="fullName"
+                      placeholder="Nome completo"
+                      class="block w-full px-4 py-4 text-base text-gray-900 bg-white border border-gray-200 rounded-xl focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label
+                    for="email"
+                    class="text-base font-medium text-gray-900"
+                  >
+                    E-mail
+                  </label>
+                  <div class="mt-2">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="E-mail"
+                      class="block w-full px-4 py-4 text-base text-gray-900 bg-white border border-gray-200 rounded-xl focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label
+                    for="telefone"
+                    class="text-base font-medium text-gray-900"
+                  >
+                    Telefone
+                  </label>
+                  <div class="mt-2">
+                    <input
+                      type="tel"
+                      name="telefone"
+                      id="telefone"
+                      placeholder="Telefone ( ) 0000-0000"
+                      class="block w-full px-4 py-4 text-base text-gray-900 bg-white border border-gray-200 rounded-xl focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label
+                    for="email"
+                    class="text-base font-medium text-gray-900"
+                  >
+                    Grau de parentesco
+                  </label>
+                  <div class="mt-2">
+                    <select
+                      class="block appearance-none w-full bg-white border border-gray-200 hover:border-gray-500 px-4 py-4 pr-8 rounded-xl leading-tight focus:outline-none"
+                      name="grauParentesco"
+                      id="grauParentesco"
+                    >
+                      <option value="" disabled selected>Selecione</option>
+                      <option value="Filho(a)">Filho(a)</option>
+                      <option value="Neto(a)">Neto(a)</option>
+                      <option value="Bisneto(a)">Bisneto(a)</option>
+                      <option value="Outro">Outro</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label
+                    for="message"
+                    class="text-base font-medium text-gray-900"
+                  >
+                    Observações
+                  </label>
+                  <div class="mt-2">
+                    <textarea
+                      name="observacoes"
+                      id="observacoes"
+                      placeholder="Digite aqui suas observações..."
+                      rows="2"
+                      class="block w-full px-4 py-4 text-base text-gray-900 bg-white border border-gray-200 resize-y rounded-xl focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
+                    ></textarea>
+                  </div>
+                </div>
+
+                <input type="hidden" name="url" />
+
+                <button
+                  type="submit"
+                  class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white transition-all duration-200 bg-[#821f48] border border-transparent rounded-xl hover:bg-[#b02f65] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#b02f65]"
+                >
+                  Enviar
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const url = window.location.href;
+      document.querySelector('input[name="url"]').value = url;
+    </script>
 
     <!-- FOOTER -->
 
@@ -174,6 +733,8 @@
       </div>
     </footer>
 
-    <script src="main.js"></script>
+    <!-- MODAL -->
+
+    <script type="module" src="main.js"></script>
   </body>
 </html>
