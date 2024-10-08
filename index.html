@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <div class="bg-[#d8cfc5] h-svh">
+    <div class="bg-[#d8cfc5]">
       <header class="py-4 md:py-6">
         <div class="container px-4 mx-auto sm:px-6 lg:px-8">
           <div class="flex items-center justify-between">
@@ -1175,88 +1175,90 @@
           <div
             class="bg-italianne-950 text-white py-12 px-6 rounded-lg flex items-center justify-center"
           >
-            <p class="font-semibold text-lg uppercase">
+            <a href="#formServices" class="font-semibold text-lg uppercase">
               Pesquisa e emissão de certidões brasileiras
-            </p>
+            </a>
           </div>
 
           <!-- Box 2 -->
           <div
             class="bg-italianne-950 text-white py-12 px-6 rounded-lg flex items-center justify-center"
           >
-            <p class="font-semibold text-lg uppercase">
+            <a href="#formServices" class="font-semibold text-lg uppercase">
               Pesquisa e emissão de certidões italianas
-            </p>
+            </a>
           </div>
 
           <!-- Box 3 -->
           <div
             class="bg-italianne-950 text-white py-12 px-6 rounded-lg flex items-center justify-center"
           >
-            <p class="font-semibold text-lg uppercase">
+            <a href="#formServices" class="font-semibold text-lg uppercase">
               Cidadania italiana por matrimônio
-            </p>
+            </a>
           </div>
 
           <!-- Box 4 -->
           <div
             class="bg-italianne-950 text-white py-12 px-6 rounded-lg flex items-center justify-center"
           >
-            <p class="font-semibold text-lg uppercase">
+            <a href="#formServices" class="font-semibold text-lg uppercase">
               Análise avulsa dos documentos que já possui para cidadania
-            </p>
+            </a>
           </div>
 
           <!-- Box 5 -->
           <div
             class="bg-italianne-950 text-white py-12 px-6 rounded-lg flex items-center justify-center"
           >
-            <p class="font-semibold text-lg uppercase">
+            <a href="#formServices" class="font-semibold text-lg uppercase">
               Traduções juramentadas
-            </p>
+            </a>
           </div>
 
           <!-- Box 6 -->
           <div
             class="bg-italianne-950 text-white py-12 px-6 rounded-lg flex items-center justify-center"
           >
-            <p class="font-semibold text-lg uppercase">
+            <a href="#formServices" class="font-semibold text-lg uppercase">
               Apostilamento de documentos
-            </p>
+            </a>
           </div>
 
           <!-- Box 7 -->
           <div
             class="bg-italianne-950 text-white py-12 px-6 rounded-lg flex items-center justify-center"
           >
-            <p class="font-semibold text-lg uppercase">
+            <a href="#formServices" class="font-semibold text-lg uppercase">
               Ajuizamento de ação na Itália
-            </p>
+            </a>
           </div>
 
           <!-- Box 8 -->
           <div
             class="bg-italianne-950 text-white py-12 px-6 rounded-lg flex items-center justify-center"
           >
-            <p class="font-semibold text-lg uppercase">
+            <a href="#formServices" class="font-semibold text-lg uppercase">
               Agendamento de passaporte italiano
-            </p>
+            </a>
           </div>
 
           <!-- Box 9 -->
           <div
             class="bg-italianne-950 text-white py-12 px-6 rounded-lg flex items-center justify-center"
           >
-            <p class="font-semibold text-lg uppercase">Vistos</p>
+            <a href="#formServices" class="font-semibold text-lg uppercase"
+              >Vistos</a
+            >
           </div>
 
           <!-- Box 10 -->
           <div
             class="bg-italianne-950 text-white py-12 px-6 rounded-lg flex items-center justify-center"
           >
-            <p class="font-semibold text-lg uppercase">
+            <a href="#formServices" class="font-semibold text-lg uppercase">
               Atualização de dados cadastrais (AIRE)
-            </p>
+            </a>
           </div>
         </div>
 
@@ -1267,6 +1269,7 @@
             method="POST"
             @submit.prevent="validateForm"
             class="space-y-3"
+            id="formServices"
           >
             <div>
               <h3
@@ -1327,10 +1330,37 @@
                   <option value="" disabled selected>
                     Escolha o serviço que deseja informações
                   </option>
-                  <option value="Filho(a)">Filho(a)</option>
-                  <option value="Neto(a)">Neto(a)</option>
-                  <option value="Bisneto(a)">Bisneto(a)</option>
-                  <option value="Outro">Outro</option>
+                  <option value="Cidadania italiana">Cidadania italiana</option>
+                  <option value="Pesquisa e emissão de certidões brasileiras">
+                    Pesquisa e emissão de certidões brasileiras
+                  </option>
+                  <option value="Pesquisa e emissão de certidões italianas">
+                    Pesquisa e emissão de certidões italianas
+                  </option>
+                  <option value="Cidadania italiana por matrimônio">
+                    Cidadania italiana por matrimônio
+                  </option>
+                  <option
+                    value="Análise avulsa dos documentos que já possui para cidadania"
+                  >
+                    Análise avulsa dos documentos que já possui para cidadania
+                  </option>
+                  <option value="Traduções juramentadas">
+                    Traduções juramentadas
+                  </option>
+                  <option value="Apostilamento de documentos">
+                    Apostilamento de documentos
+                  </option>
+                  <option value="Ajuizamento de ação na Itália">
+                    Ajuizamento de ação na Itália
+                  </option>
+                  <option value="Agendamento de passaporte italiano">
+                    Agendamento de passaporte italiano
+                  </option>
+                  <option value="Vistos">Vistos</option>
+                  <option value="Atualização de dados cadastrais (AIRE)">
+                    Atualização de dados cadastrais (AIRE)
+                  </option>
                 </select>
                 <p
                   x-show="errors.grauParentesco"
