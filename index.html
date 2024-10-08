@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <div class="bg-gray-100">
+    <div class="bg-[#d8cfc5] h-svh">
       <header class="py-4 md:py-6">
         <div class="container px-4 mx-auto sm:px-6 lg:px-8">
           <div class="flex items-center justify-between">
@@ -18,7 +18,7 @@
                 title=""
                 class="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
               >
-                <img class="w-auto h-16" src="logo.png" alt="" />
+                <img class="w-auto h-32 mt-12" src="logo.png" alt="" />
               </a>
             </div>
 
@@ -50,570 +50,371 @@
             class="grid max-w-lg grid-cols-1 mx-auto lg:max-w-full lg:items-center lg:grid-cols-2 gap-y-12 lg:gap-x-16"
           >
             <div>
-              <div class="text-center lg:text-left">
-                <h1
-                  class="text-5xl font-bold leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:leading-tight lg:text-6xl font-pj"
-                >
-                  Consultoria e Assessoria para Cidadania Italiana
-                </h1>
-                <p
-                  class="mb-2 text-md sm:text-lg text-gray-600 mt-4 sm:mt-3 sm:mb-4 font-inter"
-                >
-                  Ajudamos você a conquistar sua cidadania italiana de forma
-                  rápida e segura, com consultoria especializada e assessoria
-                  completa para cada etapa do processo.
-                </p>
-              </div>
-
-              <div class="flex">
-                <a
-                  href="#contato"
-                  class="inline-flex mt-5 items-center justify-center px-6 py-3 text-base font-medium text-white transition-all duration-200 bg-[#821f48] border border-transparent rounded-xl hover:bg-[#b02f65] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#b02f65]"
-                >
-                  Solicitar pré-análise
-                </a>
-
-                <div x-data="{ open: false }" class="relative z-10">
-                  <!-- Botão para abrir o modal -->
-                  <button
-                    @click="open = true"
-                    style="z-index: 9999"
-                    class="fixed z-50 p-3 text-center font-semibold text-white bg-[#25d366] rounded-full bottom-5 right-5 hover:bg-[#5cee93] shadow-lg"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-8 w-8"
-                      fill="#fff"
-                      viewBox="0 0 448 512"
-                    >
-                      <path
-                        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
-                      />
-                    </svg>
-                  </button>
-
-                  <button
-                    @click="open = !open"
-                    class="inline-flex mt-5 ms-5 items-center justify-center px-6 py-3 text-base font-medium text-white transition-all duration-200 bg-[#25d366] border border-transparent rounded-xl hover:bg-[#5cee93] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#5cee93]"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-6 me-3"
-                      fill="#fff"
-                      viewBox="0 0 448 512"
-                    >
-                      <path
-                        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
-                      />
-                    </svg>
-
-                    Falar pelo WhatsApp
-                  </button>
-
-                  <!-- Modal Background -->
-                  <div
-                    x-show="open"
-                    class="fixed inset-0 z-20 bg-gray-800 bg-opacity-75 transition-opacity"
-                    @click="open = false"
-                  ></div>
-
-                  <!-- Modal -->
-                  <div
-                    x-show="open"
-                    x-transition
-                    class="fixed inset-0 z-30 flex items-center justify-center p-4 overflow-y-auto"
-                  >
-                    <div
-                      class="relative w-full max-w-sm p-0 bg-[url(https://superstorm-landingpage-italianne.oofut8.easypanel.host/bgWhatsapp.DxGV9uq9.png)] bg-contain shadow-lg rounded-xl"
-                      @click.away="open = false"
-                    >
-                      <!-- Modal Header -->
-                      <div
-                        class="flex items-center bg-[#075e54] rounded-tr-xl rounded-tl-xl justify-between p-4 border-b"
-                      >
-                        <div class="flex items-center">
-                          <img
-                            class="h-8 mr-3"
-                            src="https://superstorm-landingpage-italianne.oofut8.easypanel.host/ws-logo-h.CqoXHKBU_ZxEsbS.png"
-                          />
-                          <h2 class="text-lg font-bold text-white">WhatsApp</h2>
-                        </div>
-                        <button
-                          @click="open = false"
-                          class="p-2 text-gray-300 hover:text-gray-700"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="w-6 h-6"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M6 18L18 6M6 6l12 12"
-                            />
-                          </svg>
-                        </button>
-                      </div>
-
-                      <form
-                        action="https://superstorm-rest-italianne.oofut8.easypanel.host/save/google/sheets/whatsapp"
-                        method="POST"
-                        class="p-6"
-                      >
-                        <div class="space-y-4">
-                          <div>
-                            <label
-                              for="name"
-                              class="text-sm font-bold text-gray-900"
-                              >Nome</label
-                            >
-                            <div class="mt-1">
-                              <input
-                                type="text"
-                                id="nameWhatsapp"
-                                name="nameWhatsapp"
-                                placeholder=""
-                                class="block w-full px-4 py-3 placeholder-gray-500 border border-gray-300 rounded-lg focus:ring-indigo-600 focus:border-indigo-600 sm:text-sm caret-indigo-600"
-                              />
-                            </div>
-                          </div>
-
-                          <div>
-                            <label
-                              for="email"
-                              class="text-sm font-bold text-gray-900"
-                              >E-mail</label
-                            >
-                            <div class="mt-1">
-                              <input
-                                type="email"
-                                id="emailWhatsapp"
-                                name="emailWhatsapp"
-                                placeholder=""
-                                class="block w-full px-4 py-3 placeholder-gray-500 border border-gray-300 rounded-lg focus:ring-indigo-600 focus:border-indigo-600 sm:text-sm caret-indigo-600"
-                              />
-                            </div>
-                          </div>
-
-                          <div>
-                            <label
-                              for="role"
-                              class="text-sm font-bold text-gray-900"
-                              >Número do WhatsApp</label
-                            >
-                            <div class="mt-1">
-                              <input
-                                type="tel"
-                                id="whatsappWhatsapp"
-                                name="whatsappWhatsapp"
-                                placeholder=""
-                                class="block w-full px-4 py-3 placeholder-gray-500 border border-gray-300 rounded-lg focus:ring-indigo-600 focus:border-indigo-600 sm:text-sm caret-indigo-600"
-                              />
-                            </div>
-                          </div>
-                        </div>
-
-                        <div
-                          class="flex items-center justify-end mt-5 space-x-4"
-                        >
-                          <button
-                            type="submit"
-                            class="px-6 py-3 text-base font-semibold text-white bg-[#128c7e] rounded-md hover:bg-[#075e54]"
-                          >
-                            Iniciar chat
-                          </button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <img
-                class="w-full rounded-xl"
-                src="https://italianne.com/wp-content/uploads/2023/03/small-flag-european-union-koran-passports-citizens-eu-wooden-surface-top-view-1200x1181.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- MEIO -->
-
-    <section class="py-10 bg-white sm:py-16 lg:py-24">
-      <div class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
-        <div class="grid items-center md:grid-cols-2 gap-y-10 md:gap-x-20">
-          <div class="pr-12 flex justify-center sm:pr-0 order-2 sm:order-1">
-            <div class="relative max-w-xs mb-12">
-              <img class="object-bottom rounded-md" src="italia.jpg" alt="" />
-              <img
-                class="absolute origin-bottom-right scale-75 rounded-md -bottom-12 -right-12"
-                src="https://cdn.bannerbuzz.co.nz/media/catalog/product/resize/650/n/0/n0_bbitf01_2_uk.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-
-          <div>
-            <p class="text-base text-red-800 mb-3">
-              Benefícios como cidadão italiano
-            </p>
-            <h2
-              class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl"
-            >
-              Na Italianne, cada família tem sua história continuada
-            </h2>
-            <h3 class="mt-4">
-              Quando você finalizar o processo, poderá usufruir dos seus
-              direitos enquanto cidadão italiano!
-            </h3>
-
-            <ul class="flex flex-col mt-8 space-y-4">
-              <li class="inline-flex items-center space-x-2">
-                <svg
-                  class="flex-shrink-0 w-5 h-5 text-green-500"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <span class="text-base font-medium text-gray-900">
-                  Ter dupla cidadania;
-                </span>
-              </li>
-
-              <li class="inline-flex items-center space-x-2">
-                <svg
-                  class="flex-shrink-0 w-5 h-5 text-green-500"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <span class="text-base font-medium text-gray-900">
-                  Transmitir a cidadania italiana aos descendentes;
-                </span>
-              </li>
-
-              <li class="inline-flex items-center space-x-2">
-                <svg
-                  class="flex-shrink-0 w-5 h-5 text-green-500"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <span class="text-base font-medium text-gray-900">
-                  Trabalhar de forma regular na União Européia (UE);
-                </span>
-              </li>
-
-              <li class="inline-flex items-center space-x-2">
-                <svg
-                  class="flex-shrink-0 w-5 h-5 text-green-500"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <span class="text-base font-medium text-gray-900">
-                  Residir em toda Itália e UE pelo tempo que quiser;
-                </span>
-              </li>
-
-              <li class="inline-flex items-center space-x-2">
-                <svg
-                  class="flex-shrink-0 w-5 h-5 text-green-500"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <span class="text-base font-medium text-gray-900">
-                  Estudar em Universidades com custo até 3x menor;
-                </span>
-              </li>
-
-              <li class="inline-flex items-center space-x-2">
-                <svg
-                  class="flex-shrink-0 w-5 h-5 text-green-500"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <span class="text-base font-medium text-gray-900">
-                  Usufruir de bolsas de estudos;
-                </span>
-              </li>
-
-              <li class="inline-flex items-center space-x-2">
-                <svg
-                  class="flex-shrink-0 w-5 h-5 text-green-500"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <span class="text-base font-medium text-gray-900">
-                  Acesso facilitado para visto de investidor nos EUA;
-                </span>
-              </li>
-
-              <li class="inline-flex items-center space-x-2">
-                <svg
-                  class="flex-shrink-0 w-5 h-5 text-green-500"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <span class="text-base font-medium text-gray-900">
-                  Entrar em 188 países sem necessidade de visto.
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- DEPOIMENTOS -->
-
-    <section
-      class="py-10 bg-gradient-to-b from-green-50 to-gray-50 sm:py-16 lg:py-24"
-    >
-      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div class="max-w-2xl mx-auto text-center">
-          <h2
-            class="text-3xl font-bold leading-tight text-gray-800 sm:text-4xl lg:text-5xl"
-          >
-            Depoimentos
-          </h2>
-        </div>
-
-        <div
-          class="grid max-w-xl grid-cols-1 mx-auto mt-8 text-center lg:max-w-full sm:mt-12 lg:mt-20 lg:grid-cols-3 gap-x-6 xl:gap-x-12 gap-y-6"
-        >
-          <div class="overflow-hidden bg-white rounded-md shadow">
-            <div class="px-8 py-12">
-              <blockquote class="mt-7">
-                <p class="text-lg text-black">
-                  "Quando eu era criança me contaram que o mundo é um lugar
-                  gigante e muito lindo para se conhecer. A vida vai passando e
-                  quando somos adultos nos esquecemos dessas palavras. Com a
-                  Italianne eu pude resgatar esse sonho”
-                </p>
-              </blockquote>
-              <p class="text-base font-semibold text-green-800 mt-9">
-                Cristina Dal Posso
-              </p>
-            </div>
-          </div>
-
-          <div class="overflow-hidden bg-white rounded-md shadow">
-            <div class="px-8 py-12">
-              <blockquote class="mt-7">
-                <p class="text-lg text-black">
-                  “A Italianne foi sem sobra de dúvidas a melhor escolha para
-                  conduzir meu processo de cidadania Italiana, sempre com muita
-                  transparência, atenção e carinho!”
-                </p>
-              </blockquote>
-              <p class="text-base font-semibold text-green-800 mt-9">
-                Guilherme Borin
-              </p>
-            </div>
-          </div>
-
-          <div class="overflow-hidden bg-white rounded-md shadow">
-            <div class="px-8 py-12">
-              <blockquote class="mt-7">
-                <p class="text-lg text-black">
-                  “Italianne tem sido excelente. Desde os primeiros contatos
-                  percebi o cuidado e rigor com que o trabalho é desenvolvido.
-                  As informações foram sempre claras e sabíamos desde o início o
-                  que esperar do processo inteiro.”
-                </p>
-              </blockquote>
-              <p class="text-base font-semibold text-green-800 mt-9">
-                Adriana Karam
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTATO -->
-
-    <section id="contato" class="py-12 bg-gray-50 sm:py-16 lg:py-20 xl:py-24">
-      <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div
-          class="grid grid-cols-1 lg:grid-cols-2 gap-y-12 lg:gap-x-16 xl:gap-x-36"
-        >
-          <div class="flex flex-col self-stretch justify-between">
-            <div class="flex-1">
-              <h2
-                class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
-              >
-                Faça uma pré-análise
-              </h2>
-              <p
-                class="mt-4 text-base font-normal leading-7 text-gray-600 lg:text-lg lg:mt-6 lg:leading-8"
-              >
-                O que você decide hoje influência no amanhã das próximas
-                gerações. Coloque seus dados e em breve entraremos em contato.
-              </p>
-            </div>
-          </div>
-
-          <div class="bg-white shadow-xl rounded-2xl">
-            <div class="p-6 sm:p-10">
               <form
+                x-data="formValidation()"
                 action="https://superstorm-rest-italianne.oofut8.easypanel.host/send/email"
                 method="POST"
-                class="space-y-6"
+                @submit.prevent="validateForm"
+                class="space-y-3"
               >
                 <div>
-                  <label
-                    for="fullName"
-                    class="text-base font-medium text-gray-900"
+                  <h3
+                    class="text-2xl mb-6 text-italianne-950 font-bold uppercase"
                   >
-                    Nome
-                  </label>
-                  <div class="mt-2">
-                    <input
-                      type="text"
-                      name="fullName"
-                      id="fullName"
-                      placeholder="Nome completo"
-                      class="block w-full px-4 py-4 text-base text-gray-900 bg-white border border-gray-200 rounded-xl focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
-                    />
-                  </div>
+                    Reconheça
+                    <span
+                      class="border-2 border-green-950 px-2 rounded-lg inline-block"
+                      >sua cidadania italiana</span
+                    ><br />com um atendimento personalizado<br />e feito
+                    <span
+                      class="border-2 border-italianne-950 px-2 rounded-lg inline-block"
+                      >sob medida</span
+                    >
+                    para você.
+                  </h3>
                 </div>
 
                 <div>
-                  <label
-                    for="email"
-                    class="text-base font-medium text-gray-900"
-                  >
-                    E-mail
-                  </label>
                   <div class="mt-2">
                     <input
                       type="email"
                       name="email"
                       id="email"
-                      placeholder="E-mail"
-                      class="block w-full px-4 py-4 text-base text-gray-900 bg-white border border-gray-200 rounded-xl focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
+                      x-model="email"
+                      placeholder="Digite seu e-mail"
+                      class="block w-full px-4 py-3 text-base text-gray-900 bg-white border border-green-900 rounded-xl focus:outline-none focus:border-green-600 focus:ring-1 focus:ring-green-600"
                     />
+                    <p
+                      x-show="errors.email"
+                      class="text-red-600 text-sm mt-1"
+                      x-text="errors.email"
+                    ></p>
                   </div>
                 </div>
 
                 <div>
-                  <label
-                    for="telefone"
-                    class="text-base font-medium text-gray-900"
-                  >
-                    Telefone
-                  </label>
                   <div class="mt-2">
                     <input
-                      type="tel"
-                      name="telefone"
-                      id="telefone"
-                      placeholder="Telefone ( ) 0000-0000"
-                      class="block w-full px-4 py-4 text-base text-gray-900 bg-white border border-gray-200 rounded-xl focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
+                      type="text"
+                      name="fullName"
+                      id="fullName"
+                      x-model="fullName"
+                      placeholder="Seu nome completo"
+                      class="block w-full px-4 py-3 text-base text-gray-900 bg-white border border-green-900 rounded-xl focus:outline-none focus:border-green-600 focus:ring-1 focus:ring-green-600"
                     />
+                    <p
+                      x-show="errors.fullName"
+                      class="text-red-600 text-sm mt-1"
+                      x-text="errors.fullName"
+                    ></p>
                   </div>
                 </div>
 
                 <div>
-                  <label
-                    for="email"
-                    class="text-base font-medium text-gray-900"
-                  >
-                    Grau de parentesco
-                  </label>
                   <div class="mt-2">
                     <select
-                      class="block appearance-none w-full bg-white border border-gray-200 hover:border-gray-500 px-4 py-4 pr-8 rounded-xl leading-tight focus:outline-none"
+                      x-model="grauParentesco"
+                      class="block w-full px-4 py-3 text-base text-gray-400 bg-white border border-green-900 rounded-xl focus:outline-none focus:border-green-600 focus:ring-1 focus:ring-green-600"
                       name="grauParentesco"
                       id="grauParentesco"
                     >
-                      <option value="" disabled selected>Selecione</option>
+                      <option value="" disabled selected>
+                        Grau de Parentesco
+                      </option>
                       <option value="Filho(a)">Filho(a)</option>
                       <option value="Neto(a)">Neto(a)</option>
                       <option value="Bisneto(a)">Bisneto(a)</option>
                       <option value="Outro">Outro</option>
                     </select>
+                    <p
+                      x-show="errors.grauParentesco"
+                      class="text-red-600 text-sm mt-1"
+                      x-text="errors.grauParentesco"
+                    ></p>
                   </div>
                 </div>
 
                 <div>
-                  <label
-                    for="message"
-                    class="text-base font-medium text-gray-900"
-                  >
-                    Observações
-                  </label>
-                  <div class="mt-2">
-                    <textarea
-                      name="observacoes"
-                      id="observacoes"
-                      placeholder="Digite aqui suas observações..."
-                      rows="2"
-                      class="block w-full px-4 py-4 text-base text-gray-900 bg-white border border-gray-200 resize-y rounded-xl focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
-                    ></textarea>
+                  <div class="flex mt-2 space-x-2">
+                    <!-- Campo Select para o código do país -->
+                    <div class="w-1/4">
+                      <select
+                        name="countryCode"
+                        id="countryCode"
+                        class="block w-full px-4 py-3 text-base text-gray-400 bg-white border border-green-900 rounded-xl focus:outline-none focus:border-green-600 focus:ring-1 focus:ring-green-600"
+                      >
+                        <option value="+55" selected>Brasil +55</option>
+                        <option value="" disabled></option>
+                        <option value="+93">Afeganistão +93</option>
+                        <option value="+355">Albânia +355</option>
+                        <option value="+213">Argélia +213</option>
+                        <option value="+1-684">Samoa Americana +1-684</option>
+                        <option value="+376">Andorra +376</option>
+                        <option value="+244">Angola +244</option>
+                        <option value="+1-264">Anguilla +1-264</option>
+                        <option value="+672">Antártica +672</option>
+                        <option value="+1-268">Antígua e Barbuda +1-268</option>
+                        <option value="+54">Argentina +54</option>
+                        <option value="+374">Armênia +374</option>
+                        <option value="+297">Aruba +297</option>
+                        <option value="+61">Austrália +61</option>
+                        <option value="+43">Áustria +43</option>
+                        <option value="+994">Azerbaijão +994</option>
+                        <option value="+1-242">Bahamas +1-242</option>
+                        <option value="+973">Bahrein +973</option>
+                        <option value="+880">Bangladesh +880</option>
+                        <option value="+1-246">Barbados +1-246</option>
+                        <option value="+375">Belarus +375</option>
+                        <option value="+32">Bélgica +32</option>
+                        <option value="+501">Belize +501</option>
+                        <option value="+229">Benin +229</option>
+                        <option value="+1-441">Bermudas +1-441</option>
+                        <option value="+975">Butão +975</option>
+                        <option value="+591">Bolívia +591</option>
+                        <option value="+387">Bósnia e Herzegovina +387</option>
+                        <option value="+267">Botsuana +267</option>
+                        <option value="+673">Brunei +673</option>
+                        <option value="+359">Bulgária +359</option>
+                        <option value="+226">Burkina Faso +226</option>
+                        <option value="+257">Burundi +257</option>
+                        <option value="+855">Camboja +855</option>
+                        <option value="+237">Camarões +237</option>
+                        <option value="+1">Canadá +1</option>
+                        <option value="+238">Cabo Verde +238</option>
+                        <option value="+1-345">Ilhas Cayman +1-345</option>
+                        <option value="+236">
+                          República Centro-Africana +236
+                        </option>
+                        <option value="+235">Chade +235</option>
+                        <option value="+56">Chile +56</option>
+                        <option value="+86">China +86</option>
+                        <option value="+57">Colômbia +57</option>
+                        <option value="+269">Comores +269</option>
+                        <option value="+242">Congo +242</option>
+                        <option value="+243">
+                          República Democrática do Congo +243
+                        </option>
+                        <option value="+682">Ilhas Cook +682</option>
+                        <option value="+506">Costa Rica +506</option>
+                        <option value="+225">Costa do Marfim +225</option>
+                        <option value="+385">Croácia +385</option>
+                        <option value="+53">Cuba +53</option>
+                        <option value="+599">Curaçao +599</option>
+                        <option value="+357">Chipre +357</option>
+                        <option value="+420">República Tcheca +420</option>
+                        <option value="+45">Dinamarca +45</option>
+                        <option value="+253">Djibouti +253</option>
+                        <option value="+1-767">Dominica +1-767</option>
+                        <option value="+1-809">
+                          República Dominicana +1-809
+                        </option>
+                        <option value="+670">Timor-Leste +670</option>
+                        <option value="+593">Equador +593</option>
+                        <option value="+20">Egito +20</option>
+                        <option value="+503">El Salvador +503</option>
+                        <option value="+240">Guiné Equatorial +240</option>
+                        <option value="+291">Eritreia +291</option>
+                        <option value="+372">Estônia +372</option>
+                        <option value="+251">Etiópia +251</option>
+                        <option value="+500">Ilhas Malvinas +500</option>
+                        <option value="+298">Ilhas Faroe +298</option>
+                        <option value="+679">Fiji +679</option>
+                        <option value="+358">Finlândia +358</option>
+                        <option value="+33">França +33</option>
+                        <option value="+594">Guiana Francesa +594</option>
+                        <option value="+689">Polinésia Francesa +689</option>
+                        <option value="+241">Gabão +241</option>
+                        <option value="+220">Gâmbia +220</option>
+                        <option value="+995">Geórgia +995</option>
+                        <option value="+49">Alemanha +49</option>
+                        <option value="+233">Gana +233</option>
+                        <option value="+350">Gibraltar +350</option>
+                        <option value="+30">Grécia +30</option>
+                        <option value="+299">Groenlândia +299</option>
+                        <option value="+1-473">Granada +1-473</option>
+                        <option value="+590">Guadalupe +590</option>
+                        <option value="+1-671">Guam +1-671</option>
+                        <option value="+502">Guatemala +502</option>
+                        <option value="+44-1481">Guernsey +44-1481</option>
+                        <option value="+224">Guiné +224</option>
+                        <option value="+245">Guiné-Bissau +245</option>
+                        <option value="+592">Guiana +592</option>
+                        <option value="+509">Haiti +509</option>
+                        <option value="+504">Honduras +504</option>
+                        <option value="+852">Hong Kong +852</option>
+                        <option value="+36">Hungria +36</option>
+                        <option value="+354">Islândia +354</option>
+                        <option value="+91">Índia +91</option>
+                        <option value="+62">Indonésia +62</option>
+                        <option value="+98">Irã +98</option>
+                        <option value="+964">Iraque +964</option>
+                        <option value="+353">Irlanda +353</option>
+                        <option value="+44-1624">Ilha de Man +44-1624</option>
+                        <option value="+972">Israel +972</option>
+                        <option value="+39">Itália +39</option>
+                        <option value="+1-876">Jamaica +1-876</option>
+                        <option value="+81">Japão +81</option>
+                        <option value="+44-1534">Jersey +44-1534</option>
+                        <option value="+962">Jordânia +962</option>
+                        <option value="+7">Cazaquistão +7</option>
+                        <option value="+254">Quênia +254</option>
+                        <option value="+686">Kiribati +686</option>
+                        <option value="+965">Kuwait +965</option>
+                        <option value="+996">Quirguistão +996</option>
+                        <option value="+856">Laos +856</option>
+                        <option value="+371">Letônia +371</option>
+                        <option value="+961">Líbano +961</option>
+                        <option value="+266">Lesoto +266</option>
+                        <option value="+231">Libéria +231</option>
+                        <option value="+218">Líbia +218</option>
+                        <option value="+423">Liechtenstein +423</option>
+                        <option value="+370">Lituânia +370</option>
+                        <option value="+352">Luxemburgo +352</option>
+                        <option value="+853">Macau +853</option>
+                        <option value="+389">Macedônia +389</option>
+                        <option value="+261">Madagascar +261</option>
+                        <option value="+265">Malawi +265</option>
+                        <option value="+60">Malásia +60</option>
+                        <option value="+960">Maldivas +960</option>
+                        <option value="+223">Mali +223</option>
+                        <option value="+356">Malta +356</option>
+                        <option value="+692">Ilhas Marshall +692</option>
+                        <option value="+596">Martinica +596</option>
+                        <option value="+222">Mauritânia +222</option>
+                        <option value="+230">Maurício +230</option>
+                        <option value="+262">Mayotte +262</option>
+                        <option value="+52">México +52</option>
+                        <option value="+691">Micronésia +691</option>
+                        <option value="+373">Moldávia +373</option>
+                        <option value="+377">Mônaco +377</option>
+                        <option value="+976">Mongólia +976</option>
+                        <option value="+382">Montenegro +382</option>
+                        <option value="+1-664">Montserrat +1-664</option>
+                        <option value="+212">Marrocos +212</option>
+                        <option value="+258">Moçambique +258</option>
+                        <option value="+95">Mianmar +95</option>
+                        <option value="+264">Namíbia +264</option>
+                        <option value="+674">Nauru +674</option>
+                        <option value="+977">Nepal +977</option>
+                        <option value="+31">Países Baixos +31</option>
+                        <option value="+599">Caribe Neerlandês +599</option>
+                        <option value="+687">Nova Caledônia +687</option>
+                        <option value="+64">Nova Zelândia +64</option>
+                        <option value="+505">Nicarágua +505</option>
+                        <option value="+227">Níger +227</option>
+                        <option value="+234">Nigéria +234</option>
+                        <option value="+683">Niue +683</option>
+                        <option value="+672">Ilha Norfolk +672</option>
+                        <option value="+850">Coreia do Norte +850</option>
+                        <option value="+47">Noruega +47</option>
+                        <option value="+968">Omã +968</option>
+                        <option value="+92">Paquistão +92</option>
+                        <option value="+680">Palau +680</option>
+                        <option value="+970">Palestina +970</option>
+                        <option value="+507">Panamá +507</option>
+                        <option value="+675">Papua-Nova Guiné +675</option>
+                        <option value="+595">Paraguai +595</option>
+                        <option value="+51">Peru +51</option>
+                        <option value="+63">Filipinas +63</option>
+                        <option value="+48">Polônia +48</option>
+                        <option value="+351">Portugal +351</option>
+                        <option value="+1-787">Porto Rico +1-787</option>
+                        <option value="+974">Catar +974</option>
+                        <option value="+262">Reunião +262</option>
+                        <option value="+40">Romênia +40</option>
+                        <option value="+7">Rússia +7</option>
+                        <option value="+250">Ruanda +250</option>
+                        <option value="+590">Saint Barthélemy +590</option>
+                        <option value="+290">Santa Helena +290</option>
+                        <option value="+1-869">
+                          São Cristóvão e Neves +1-869
+                        </option>
+                        <option value="+1-758">Santa Lúcia +1-758</option>
+                        <option value="+590">São Martinho +590</option>
+                        <option value="+508">
+                          Saint Pierre e Miquelon +508
+                        </option>
+                        <option value="+1-784">
+                          São Vicente e Granadinas +1-784
+                        </option>
+                        <option value="+685">Samoa +685</option>
+                        <option value="+378">San Marino +378</option>
+                        <option value="+239">São Tomé e Príncipe +239</option>
+                        <option value="+966">Arábia Saudita +966</option>
+                        <option value="+221">Senegal +221</option>
+                        <option value="+381">Sérvia +381</option>
+                        <option value="+248">Seychelles +248</option>
+                        <option value="+232">Serra Leoa +232</option>
+                        <option value="+65">Singapura +65</option>
+                        <option value="+421">Eslováquia +421</option>
+                        <option value="+386">Eslovênia +386</option>
+                        <option value="+677">Ilhas Salomão +677</option>
+                        <option value="+252">Somália +252</option>
+                        <option value="+27">África do Sul +27</option>
+                        <option value="+82">Coreia do Sul +82</option>
+                        <option value="+211">Sudão do Sul +211</option>
+                        <option value="+34">Espanha +34</option>
+                        <option value="+94">Sri Lanka +94</option>
+                        <option value="+249">Sudão +249</option>
+                        <option value="+597">Suriname +597</option>
+                        <option value="+47">Svalbard e Jan Mayen +47</option>
+                        <option value="+268">Essuatíni +268</option>
+                        <option value="+46">Suécia +46</option>
+                        <option value="+41">Suíça +41</option>
+                        <option value="+963">Síria +963</option>
+                        <option value="+886">Taiwan +886</option>
+                        <option value="+992">Tajiquistão +992</option>
+                        <option value="+255">Tanzânia +255</option>
+                        <option value="+66">Tailândia +66</option>
+                        <option value="+228">Togo +228</option>
+                        <option value="+690">Tokelau +690</option>
+                        <option value="+676">Tonga +676</option>
+                        <option value="+1-868">Trinidad e Tobago +1-868</option>
+                        <option value="+216">Tunísia +216</option>
+                        <option value="+90">Turquia +90</option>
+                        <option value="+993">Turcomenistão +993</option>
+                        <option value="+688">Tuvalu +688</option>
+                        <option value="+1-649">
+                          Ilhas Turks e Caicos +1-649
+                        </option>
+                        <option value="+256">Uganda +256</option>
+                        <option value="+380">Ucrânia +380</option>
+                        <option value="+971">
+                          Emirados Árabes Unidos +971
+                        </option>
+                        <option value="+44">Reino Unido +44</option>
+                        <option value="+1">Estados Unidos +1</option>
+                        <option value="+598">Uruguai +598</option>
+                        <option value="+998">Uzbequistão +998</option>
+                        <option value="+678">Vanuatu +678</option>
+                        <option value="+379">Vaticano +379</option>
+                        <option value="+58">Venezuela +58</option>
+                        <option value="+84">Vietnã +84</option>
+                        <option value="+681">Wallis e Futuna +681</option>
+                        <option value="+212">Saara Ocidental +212</option>
+                        <option value="+967">Iémen +967</option>
+                        <option value="+260">Zâmbia +260</option>
+                        <option value="+263">Zimbábue +263</option>
+                      </select>
+                    </div>
+
+                    <!-- Campo de telefone -->
+                    <div class="w-3/4">
+                      <input
+                        type="tel"
+                        name="telefone"
+                        id="telefone"
+                        x-model="telefone"
+                        placeholder="Seu número de WhatsApp com DDD"
+                        x-mask:dynamic="$input.length <= 14 ? '(99) 9999-9999' : '(99) 99999-9999'"
+                        class="block w-full px-4 py-3 text-base text-gray-900 bg-white border border-green-900 rounded-xl focus:outline-none focus:border-green-600 focus:ring-1 focus:ring-green-600"
+                      />
+                      <p
+                        x-show="errors.telefone"
+                        class="text-red-600 text-sm mt-1"
+                        x-text="errors.telefone"
+                      ></p>
+                    </div>
                   </div>
                 </div>
 
@@ -621,16 +422,1110 @@
 
                 <button
                   type="submit"
-                  class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white transition-all duration-200 bg-[#821f48] border border-transparent rounded-xl hover:bg-[#b02f65] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#b02f65]"
+                  class="block w-full items-center justify-center px-6 py-3 text-lg uppercase font-bold text-[#d7cb89] transition-all duration-200 bg-italianne-950 border border-transparent rounded-xl hover:bg-italianne-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-900"
                 >
-                  Enviar
+                  Quero minha cidadania
                 </button>
               </form>
             </div>
           </div>
         </div>
+      </section>
+    </div>
+
+    <!-- QUEM SOMOS -->
+
+    <section class="pb-10 bg-[#d8cfc5] sm:pb-16 lg:pb-24">
+      <div class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+        <div class="grid items-start md:grid-cols-2 gap-y-10 md:gap-x-20">
+          <div class="flex justify-start sm:pr-0 order-2 sm:order-1">
+            <div class="relative mb-12">
+              <p class="text-2xl uppercase font-bold text-italianne-950 mb-3">
+                Você encontra na Italianne
+              </p>
+              <ul class="flex flex-col mt-8 space-y-4">
+                <li class="inline-flex items-center space-x-2">
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-italianne-950"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span class="text-lg font-medium text-italianne-950">
+                    Apoio humanizado e completo desde a busca documental até o
+                    reconhecimento;
+                  </span>
+                </li>
+
+                <li class="inline-flex items-center space-x-2">
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-italianne-950"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span class="text-lg font-medium text-italianne-950">
+                    Processos concluídos em até 1 ano e meio na fase judicial;
+                  </span>
+                </li>
+
+                <li class="inline-flex items-center space-x-2">
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-italianne-950"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span class="text-lg font-medium text-italianne-950">
+                    Planejamento financeiro para saber exatamente quanto
+                    investir do início ao fim;
+                  </span>
+                </li>
+
+                <li class="inline-flex items-center space-x-2">
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-italianne-950"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span class="text-lg font-medium text-italianne-950">
+                    Transparência total em cada etapa, garantindo clareza e
+                    confiança em todas as nossas ações;
+                  </span>
+                </li>
+
+                <li class="inline-flex items-center space-x-2">
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-red-900"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span class="text-lg font-medium text-red-900">
+                    Mais de 4.291 pessoas atendidas.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <p class="text-2xl uppercase font-bold text-italianne-950 mb-3">
+              Quem somos
+            </p>
+            <h2
+              class="text-3xl font-bold leading-tight text-italianne-950 sm:text-4xl lg:text-5xl"
+            >
+              Sua porta de entrada para a cidadania italiana!
+            </h2>
+            <p class="mt-6 text-xl text-italianne-950 leading-10">
+              Somos a Italianne, sua parceira de confiança na jornada para
+              conquistar a cidadania italiana. Com anos de experiência e um time
+              de especialistas apaixonados por história e genealogia, oferecemos
+              um serviço completo e personalizado para você.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- ETAPAS -->
+
+    <section class="pb-10 bg-[#d8cfc5] sm:pb-16 lg:pb-24">
+      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="flex-col items-center justify-center mx-auto text-center">
+          <h2
+            class="text-2xl inline-block font-bold uppercase leading-tight text-[#d8cfc5] bg-italianne-950 py-3 px-6 rounded-xl sm:text-3xl lg:text-4xl"
+          >
+            Etapas do processo na Italianne
+          </h2>
+          <p class="mt-6 text-xl text-italianne-950">
+            Na Italianne, você tem a liberdade de escolher
+            <strong
+              >quantas e quais etapas<br class="hidden sm:block" />deseja
+              realizar</strong
+            >
+            por conta própria ou <strong>com o apoio da nossa equipe.</strong>
+          </p>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+          <!-- Grid layout for the 5 steps -->
+          <div class="grid grid-cols-1 sm:grid-cols-5 gap-4 text-center">
+            <!-- Step 1 -->
+            <div class="bg-italianne-950 text-[#d8cfc5] py-10 rounded-lg">
+              <h2 class="text-7xl font-bold">1</h2>
+              <p class="mt-2 text-sm font-semibold uppercase">Diagnóstico</p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="bg-italianne-950 text-[#d8cfc5] py-10 rounded-lg">
+              <h2 class="text-7xl font-bold">2</h2>
+              <p class="mt-2 text-sm font-semibold uppercase">Planejamento</p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="bg-italianne-950 text-[#d8cfc5] py-10 rounded-lg">
+              <h2 class="text-7xl font-bold">3</h2>
+              <p class="mt-2 text-sm font-semibold uppercase">Documentos</p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="bg-italianne-950 text-[#d8cfc5] py-10 rounded-lg">
+              <h2 class="text-7xl font-bold">4</h2>
+              <p class="mt-2 text-sm font-semibold uppercase">Apresentação</p>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="bg-italianne-950 text-[#d8cfc5] py-10 rounded-lg">
+              <h2 class="text-7xl font-bold">5</h2>
+              <p class="mt-2 text-sm font-semibold uppercase">Reconhecimento</p>
+            </div>
+          </div>
+
+          <!-- Descriptive text below the steps -->
+          <div class="text-center mt-8">
+            <p class="text-xl font-semibold text-italianne-950 uppercase">
+              Desde o primeiro contato, até a conclusão do processo de
+              cidadania,<br class="hidden sm:block" />
+              mantemos você informado sobre cada etapa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="flex flex-col justify-center items-center bg-[#d8cfc5] pb-10"
+    >
+      <!-- FORM -->
+
+      <form
+        x-data="formValidation()"
+        action="https://superstorm-rest-italianne.oofut8.easypanel.host/send/email"
+        method="POST"
+        @submit.prevent="validateForm"
+        class="space-y-3"
+      >
+        <div>
+          <h3
+            class="text-2xl mb-6 text-italianne-950 font-bold uppercase text-center"
+          >
+            Preencha suas informações para falar<br />com nosso atendimento
+          </h3>
+        </div>
+
+        <div>
+          <div class="mt-2">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              x-model="email"
+              placeholder="Digite seu e-mail"
+              class="block w-full px-4 py-3 text-base text-gray-900 bg-white border border-green-900 rounded-xl focus:outline-none focus:border-green-600 focus:ring-1 focus:ring-green-600"
+            />
+            <p
+              x-show="errors.email"
+              class="text-red-600 text-sm mt-1"
+              x-text="errors.email"
+            ></p>
+          </div>
+        </div>
+
+        <div>
+          <div class="mt-2">
+            <input
+              type="text"
+              name="fullName"
+              id="fullName"
+              x-model="fullName"
+              placeholder="Seu nome completo"
+              class="block w-full px-4 py-3 text-base text-gray-900 bg-white border border-green-900 rounded-xl focus:outline-none focus:border-green-600 focus:ring-1 focus:ring-green-600"
+            />
+            <p
+              x-show="errors.fullName"
+              class="text-red-600 text-sm mt-1"
+              x-text="errors.fullName"
+            ></p>
+          </div>
+        </div>
+
+        <div>
+          <div class="mt-2">
+            <select
+              x-model="grauParentesco"
+              class="block w-full px-4 py-3 text-base text-gray-400 bg-white border border-green-900 rounded-xl focus:outline-none focus:border-green-600 focus:ring-1 focus:ring-green-600"
+              name="grauParentesco"
+              id="grauParentesco"
+            >
+              <option value="" disabled selected>Grau de Parentesco</option>
+              <option value="Filho(a)">Filho(a)</option>
+              <option value="Neto(a)">Neto(a)</option>
+              <option value="Bisneto(a)">Bisneto(a)</option>
+              <option value="Outro">Outro</option>
+            </select>
+            <p
+              x-show="errors.grauParentesco"
+              class="text-red-600 text-sm mt-1"
+              x-text="errors.grauParentesco"
+            ></p>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex mt-2 space-x-2">
+            <!-- Campo Select para o código do país -->
+            <div class="w-1/4">
+              <select
+                name="countryCode"
+                id="countryCode"
+                class="block w-full px-4 py-3 text-base text-gray-400 bg-white border border-green-900 rounded-xl focus:outline-none focus:border-green-600 focus:ring-1 focus:ring-green-600"
+              >
+                <option value="+55" selected>Brasil +55</option>
+                <option value="" disabled></option>
+                <option value="+93">Afeganistão +93</option>
+                <option value="+355">Albânia +355</option>
+                <option value="+213">Argélia +213</option>
+                <option value="+1-684">Samoa Americana +1-684</option>
+                <option value="+376">Andorra +376</option>
+                <option value="+244">Angola +244</option>
+                <option value="+1-264">Anguilla +1-264</option>
+                <option value="+672">Antártica +672</option>
+                <option value="+1-268">Antígua e Barbuda +1-268</option>
+                <option value="+54">Argentina +54</option>
+                <option value="+374">Armênia +374</option>
+                <option value="+297">Aruba +297</option>
+                <option value="+61">Austrália +61</option>
+                <option value="+43">Áustria +43</option>
+                <option value="+994">Azerbaijão +994</option>
+                <option value="+1-242">Bahamas +1-242</option>
+                <option value="+973">Bahrein +973</option>
+                <option value="+880">Bangladesh +880</option>
+                <option value="+1-246">Barbados +1-246</option>
+                <option value="+375">Belarus +375</option>
+                <option value="+32">Bélgica +32</option>
+                <option value="+501">Belize +501</option>
+                <option value="+229">Benin +229</option>
+                <option value="+1-441">Bermudas +1-441</option>
+                <option value="+975">Butão +975</option>
+                <option value="+591">Bolívia +591</option>
+                <option value="+387">Bósnia e Herzegovina +387</option>
+                <option value="+267">Botsuana +267</option>
+                <option value="+673">Brunei +673</option>
+                <option value="+359">Bulgária +359</option>
+                <option value="+226">Burkina Faso +226</option>
+                <option value="+257">Burundi +257</option>
+                <option value="+855">Camboja +855</option>
+                <option value="+237">Camarões +237</option>
+                <option value="+1">Canadá +1</option>
+                <option value="+238">Cabo Verde +238</option>
+                <option value="+1-345">Ilhas Cayman +1-345</option>
+                <option value="+236">República Centro-Africana +236</option>
+                <option value="+235">Chade +235</option>
+                <option value="+56">Chile +56</option>
+                <option value="+86">China +86</option>
+                <option value="+57">Colômbia +57</option>
+                <option value="+269">Comores +269</option>
+                <option value="+242">Congo +242</option>
+                <option value="+243">
+                  República Democrática do Congo +243
+                </option>
+                <option value="+682">Ilhas Cook +682</option>
+                <option value="+506">Costa Rica +506</option>
+                <option value="+225">Costa do Marfim +225</option>
+                <option value="+385">Croácia +385</option>
+                <option value="+53">Cuba +53</option>
+                <option value="+599">Curaçao +599</option>
+                <option value="+357">Chipre +357</option>
+                <option value="+420">República Tcheca +420</option>
+                <option value="+45">Dinamarca +45</option>
+                <option value="+253">Djibouti +253</option>
+                <option value="+1-767">Dominica +1-767</option>
+                <option value="+1-809">República Dominicana +1-809</option>
+                <option value="+670">Timor-Leste +670</option>
+                <option value="+593">Equador +593</option>
+                <option value="+20">Egito +20</option>
+                <option value="+503">El Salvador +503</option>
+                <option value="+240">Guiné Equatorial +240</option>
+                <option value="+291">Eritreia +291</option>
+                <option value="+372">Estônia +372</option>
+                <option value="+251">Etiópia +251</option>
+                <option value="+500">Ilhas Malvinas +500</option>
+                <option value="+298">Ilhas Faroe +298</option>
+                <option value="+679">Fiji +679</option>
+                <option value="+358">Finlândia +358</option>
+                <option value="+33">França +33</option>
+                <option value="+594">Guiana Francesa +594</option>
+                <option value="+689">Polinésia Francesa +689</option>
+                <option value="+241">Gabão +241</option>
+                <option value="+220">Gâmbia +220</option>
+                <option value="+995">Geórgia +995</option>
+                <option value="+49">Alemanha +49</option>
+                <option value="+233">Gana +233</option>
+                <option value="+350">Gibraltar +350</option>
+                <option value="+30">Grécia +30</option>
+                <option value="+299">Groenlândia +299</option>
+                <option value="+1-473">Granada +1-473</option>
+                <option value="+590">Guadalupe +590</option>
+                <option value="+1-671">Guam +1-671</option>
+                <option value="+502">Guatemala +502</option>
+                <option value="+44-1481">Guernsey +44-1481</option>
+                <option value="+224">Guiné +224</option>
+                <option value="+245">Guiné-Bissau +245</option>
+                <option value="+592">Guiana +592</option>
+                <option value="+509">Haiti +509</option>
+                <option value="+504">Honduras +504</option>
+                <option value="+852">Hong Kong +852</option>
+                <option value="+36">Hungria +36</option>
+                <option value="+354">Islândia +354</option>
+                <option value="+91">Índia +91</option>
+                <option value="+62">Indonésia +62</option>
+                <option value="+98">Irã +98</option>
+                <option value="+964">Iraque +964</option>
+                <option value="+353">Irlanda +353</option>
+                <option value="+44-1624">Ilha de Man +44-1624</option>
+                <option value="+972">Israel +972</option>
+                <option value="+39">Itália +39</option>
+                <option value="+1-876">Jamaica +1-876</option>
+                <option value="+81">Japão +81</option>
+                <option value="+44-1534">Jersey +44-1534</option>
+                <option value="+962">Jordânia +962</option>
+                <option value="+7">Cazaquistão +7</option>
+                <option value="+254">Quênia +254</option>
+                <option value="+686">Kiribati +686</option>
+                <option value="+965">Kuwait +965</option>
+                <option value="+996">Quirguistão +996</option>
+                <option value="+856">Laos +856</option>
+                <option value="+371">Letônia +371</option>
+                <option value="+961">Líbano +961</option>
+                <option value="+266">Lesoto +266</option>
+                <option value="+231">Libéria +231</option>
+                <option value="+218">Líbia +218</option>
+                <option value="+423">Liechtenstein +423</option>
+                <option value="+370">Lituânia +370</option>
+                <option value="+352">Luxemburgo +352</option>
+                <option value="+853">Macau +853</option>
+                <option value="+389">Macedônia +389</option>
+                <option value="+261">Madagascar +261</option>
+                <option value="+265">Malawi +265</option>
+                <option value="+60">Malásia +60</option>
+                <option value="+960">Maldivas +960</option>
+                <option value="+223">Mali +223</option>
+                <option value="+356">Malta +356</option>
+                <option value="+692">Ilhas Marshall +692</option>
+                <option value="+596">Martinica +596</option>
+                <option value="+222">Mauritânia +222</option>
+                <option value="+230">Maurício +230</option>
+                <option value="+262">Mayotte +262</option>
+                <option value="+52">México +52</option>
+                <option value="+691">Micronésia +691</option>
+                <option value="+373">Moldávia +373</option>
+                <option value="+377">Mônaco +377</option>
+                <option value="+976">Mongólia +976</option>
+                <option value="+382">Montenegro +382</option>
+                <option value="+1-664">Montserrat +1-664</option>
+                <option value="+212">Marrocos +212</option>
+                <option value="+258">Moçambique +258</option>
+                <option value="+95">Mianmar +95</option>
+                <option value="+264">Namíbia +264</option>
+                <option value="+674">Nauru +674</option>
+                <option value="+977">Nepal +977</option>
+                <option value="+31">Países Baixos +31</option>
+                <option value="+599">Caribe Neerlandês +599</option>
+                <option value="+687">Nova Caledônia +687</option>
+                <option value="+64">Nova Zelândia +64</option>
+                <option value="+505">Nicarágua +505</option>
+                <option value="+227">Níger +227</option>
+                <option value="+234">Nigéria +234</option>
+                <option value="+683">Niue +683</option>
+                <option value="+672">Ilha Norfolk +672</option>
+                <option value="+850">Coreia do Norte +850</option>
+                <option value="+47">Noruega +47</option>
+                <option value="+968">Omã +968</option>
+                <option value="+92">Paquistão +92</option>
+                <option value="+680">Palau +680</option>
+                <option value="+970">Palestina +970</option>
+                <option value="+507">Panamá +507</option>
+                <option value="+675">Papua-Nova Guiné +675</option>
+                <option value="+595">Paraguai +595</option>
+                <option value="+51">Peru +51</option>
+                <option value="+63">Filipinas +63</option>
+                <option value="+48">Polônia +48</option>
+                <option value="+351">Portugal +351</option>
+                <option value="+1-787">Porto Rico +1-787</option>
+                <option value="+974">Catar +974</option>
+                <option value="+262">Reunião +262</option>
+                <option value="+40">Romênia +40</option>
+                <option value="+7">Rússia +7</option>
+                <option value="+250">Ruanda +250</option>
+                <option value="+590">Saint Barthélemy +590</option>
+                <option value="+290">Santa Helena +290</option>
+                <option value="+1-869">São Cristóvão e Neves +1-869</option>
+                <option value="+1-758">Santa Lúcia +1-758</option>
+                <option value="+590">São Martinho +590</option>
+                <option value="+508">Saint Pierre e Miquelon +508</option>
+                <option value="+1-784">São Vicente e Granadinas +1-784</option>
+                <option value="+685">Samoa +685</option>
+                <option value="+378">San Marino +378</option>
+                <option value="+239">São Tomé e Príncipe +239</option>
+                <option value="+966">Arábia Saudita +966</option>
+                <option value="+221">Senegal +221</option>
+                <option value="+381">Sérvia +381</option>
+                <option value="+248">Seychelles +248</option>
+                <option value="+232">Serra Leoa +232</option>
+                <option value="+65">Singapura +65</option>
+                <option value="+421">Eslováquia +421</option>
+                <option value="+386">Eslovênia +386</option>
+                <option value="+677">Ilhas Salomão +677</option>
+                <option value="+252">Somália +252</option>
+                <option value="+27">África do Sul +27</option>
+                <option value="+82">Coreia do Sul +82</option>
+                <option value="+211">Sudão do Sul +211</option>
+                <option value="+34">Espanha +34</option>
+                <option value="+94">Sri Lanka +94</option>
+                <option value="+249">Sudão +249</option>
+                <option value="+597">Suriname +597</option>
+                <option value="+47">Svalbard e Jan Mayen +47</option>
+                <option value="+268">Essuatíni +268</option>
+                <option value="+46">Suécia +46</option>
+                <option value="+41">Suíça +41</option>
+                <option value="+963">Síria +963</option>
+                <option value="+886">Taiwan +886</option>
+                <option value="+992">Tajiquistão +992</option>
+                <option value="+255">Tanzânia +255</option>
+                <option value="+66">Tailândia +66</option>
+                <option value="+228">Togo +228</option>
+                <option value="+690">Tokelau +690</option>
+                <option value="+676">Tonga +676</option>
+                <option value="+1-868">Trinidad e Tobago +1-868</option>
+                <option value="+216">Tunísia +216</option>
+                <option value="+90">Turquia +90</option>
+                <option value="+993">Turcomenistão +993</option>
+                <option value="+688">Tuvalu +688</option>
+                <option value="+1-649">Ilhas Turks e Caicos +1-649</option>
+                <option value="+256">Uganda +256</option>
+                <option value="+380">Ucrânia +380</option>
+                <option value="+971">Emirados Árabes Unidos +971</option>
+                <option value="+44">Reino Unido +44</option>
+                <option value="+1">Estados Unidos +1</option>
+                <option value="+598">Uruguai +598</option>
+                <option value="+998">Uzbequistão +998</option>
+                <option value="+678">Vanuatu +678</option>
+                <option value="+379">Vaticano +379</option>
+                <option value="+58">Venezuela +58</option>
+                <option value="+84">Vietnã +84</option>
+                <option value="+681">Wallis e Futuna +681</option>
+                <option value="+212">Saara Ocidental +212</option>
+                <option value="+967">Iémen +967</option>
+                <option value="+260">Zâmbia +260</option>
+                <option value="+263">Zimbábue +263</option>
+              </select>
+            </div>
+
+            <!-- Campo de telefone -->
+            <div class="w-3/4">
+              <input
+                type="tel"
+                name="telefone"
+                id="telefone"
+                x-model="telefone"
+                placeholder="Seu número de WhatsApp com DDD"
+                x-mask:dynamic="$input.length <= 14 ? '(99) 9999-9999' : '(99) 99999-9999'"
+                class="block w-full px-4 py-3 text-base text-gray-900 bg-white border border-green-900 rounded-xl focus:outline-none focus:border-green-600 focus:ring-1 focus:ring-green-600"
+              />
+              <p
+                x-show="errors.telefone"
+                class="text-red-600 text-sm mt-1"
+                x-text="errors.telefone"
+              ></p>
+            </div>
+          </div>
+        </div>
+
+        <input type="hidden" name="url" />
+
+        <button
+          type="submit"
+          class="block w-full items-center justify-center px-6 py-3 text-lg uppercase font-bold text-[#d7cb89] transition-all duration-200 bg-italianne-950 border border-transparent rounded-xl hover:bg-italianne-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-900"
+        >
+          Quero saber mais
+        </button>
+      </form>
+
+      <div>
+        <h3 class="text-xl mt-12 text-italianne-950 font-medium text-center">
+          Italianne Assessoria: Sua porta de entrada para a cidadania italiana!
+        </h3>
+      </div>
+
+      <div class="mt-24">
+        <h2
+          class="text-2xl inline-block font-bold uppercase leading-tight text-italianne-950 py-3 px-6 rounded-xl sm:text-3xl lg:text-4xl"
+        >
+          Demais produtos
+        </h2>
+      </div>
+
+      <!-- END: FORM -->
+    </section>
+
+    <section class="bg-italianne-900 py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Grid layout for the items -->
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 text-center"
+        >
+          <!-- Box 1 -->
+          <div
+            class="bg-italianne-950 text-white py-12 px-6 rounded-lg flex items-center justify-center"
+          >
+            <p class="font-semibold text-lg uppercase">
+              Pesquisa e emissão de certidões brasileiras
+            </p>
+          </div>
+
+          <!-- Box 2 -->
+          <div
+            class="bg-italianne-950 text-white py-12 px-6 rounded-lg flex items-center justify-center"
+          >
+            <p class="font-semibold text-lg uppercase">
+              Pesquisa e emissão de certidões italianas
+            </p>
+          </div>
+
+          <!-- Box 3 -->
+          <div
+            class="bg-italianne-950 text-white py-12 px-6 rounded-lg flex items-center justify-center"
+          >
+            <p class="font-semibold text-lg uppercase">
+              Cidadania italiana por matrimônio
+            </p>
+          </div>
+
+          <!-- Box 4 -->
+          <div
+            class="bg-italianne-950 text-white py-12 px-6 rounded-lg flex items-center justify-center"
+          >
+            <p class="font-semibold text-lg uppercase">
+              Análise avulsa dos documentos que já possui para cidadania
+            </p>
+          </div>
+
+          <!-- Box 5 -->
+          <div
+            class="bg-italianne-950 text-white py-12 px-6 rounded-lg flex items-center justify-center"
+          >
+            <p class="font-semibold text-lg uppercase">
+              Traduções juramentadas
+            </p>
+          </div>
+
+          <!-- Box 6 -->
+          <div
+            class="bg-italianne-950 text-white py-12 px-6 rounded-lg flex items-center justify-center"
+          >
+            <p class="font-semibold text-lg uppercase">
+              Apostilamento de documentos
+            </p>
+          </div>
+
+          <!-- Box 7 -->
+          <div
+            class="bg-italianne-950 text-white py-12 px-6 rounded-lg flex items-center justify-center"
+          >
+            <p class="font-semibold text-lg uppercase">
+              Ajuizamento de ação na Itália
+            </p>
+          </div>
+
+          <!-- Box 8 -->
+          <div
+            class="bg-italianne-950 text-white py-12 px-6 rounded-lg flex items-center justify-center"
+          >
+            <p class="font-semibold text-lg uppercase">
+              Agendamento de passaporte italiano
+            </p>
+          </div>
+
+          <!-- Box 9 -->
+          <div
+            class="bg-italianne-950 text-white py-12 px-6 rounded-lg flex items-center justify-center"
+          >
+            <p class="font-semibold text-lg uppercase">Vistos</p>
+          </div>
+
+          <!-- Box 10 -->
+          <div
+            class="bg-italianne-950 text-white py-12 px-6 rounded-lg flex items-center justify-center"
+          >
+            <p class="font-semibold text-lg uppercase">
+              Atualização de dados cadastrais (AIRE)
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-16 flex flex-col items-center">
+          <form
+            x-data="formValidation()"
+            action="https://superstorm-rest-italianne.oofut8.easypanel.host/send/email"
+            method="POST"
+            @submit.prevent="validateForm"
+            class="space-y-3"
+          >
+            <div>
+              <h3
+                class="text-2xl mb-6 text-white font-bold uppercase text-center"
+              >
+                Quer saber mais sobre nossos serviços?<br
+                  class="hidden sm:block"
+                />
+                Deixe seu contato e sua pergunta,<br class="hidden sm:block" />
+                e entraremos em contato com você!
+              </h3>
+            </div>
+
+            <div>
+              <div class="mt-2">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  x-model="email"
+                  placeholder="Digite seu e-mail"
+                  class="block w-full px-4 py-3 text-base text-gray-900 bg-white border border-green-900 rounded-xl focus:outline-none focus:border-green-600 focus:ring-1 focus:ring-green-600"
+                />
+                <p
+                  x-show="errors.email"
+                  class="text-red-600 text-sm mt-1"
+                  x-text="errors.email"
+                ></p>
+              </div>
+            </div>
+
+            <div>
+              <div class="mt-2">
+                <input
+                  type="text"
+                  name="fullName"
+                  id="fullName"
+                  x-model="fullName"
+                  placeholder="Seu nome completo"
+                  class="block w-full px-4 py-3 text-base text-gray-900 bg-white border border-green-900 rounded-xl focus:outline-none focus:border-green-600 focus:ring-1 focus:ring-green-600"
+                />
+                <p
+                  x-show="errors.fullName"
+                  class="text-red-600 text-sm mt-1"
+                  x-text="errors.fullName"
+                ></p>
+              </div>
+            </div>
+
+            <div>
+              <div class="mt-2">
+                <select
+                  x-model="grauParentesco"
+                  class="block w-full px-4 py-3 text-base text-gray-400 bg-white border border-green-900 rounded-xl focus:outline-none focus:border-green-600 focus:ring-1 focus:ring-green-600"
+                  name="grauParentesco"
+                  id="grauParentesco"
+                >
+                  <option value="" disabled selected>
+                    Escolha o serviço que deseja informações
+                  </option>
+                  <option value="Filho(a)">Filho(a)</option>
+                  <option value="Neto(a)">Neto(a)</option>
+                  <option value="Bisneto(a)">Bisneto(a)</option>
+                  <option value="Outro">Outro</option>
+                </select>
+                <p
+                  x-show="errors.grauParentesco"
+                  class="text-red-600 text-sm mt-1"
+                  x-text="errors.grauParentesco"
+                ></p>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex mt-2 space-x-2">
+                <!-- Campo Select para o código do país -->
+                <div class="w-1/4">
+                  <select
+                    name="countryCode"
+                    id="countryCode"
+                    class="block w-full px-4 py-3 text-base text-gray-400 bg-white border border-green-900 rounded-xl focus:outline-none focus:border-green-600 focus:ring-1 focus:ring-green-600"
+                  >
+                    <option value="+55" selected>Brasil +55</option>
+                    <option value="" disabled></option>
+                    <option value="+93">Afeganistão +93</option>
+                    <option value="+355">Albânia +355</option>
+                    <option value="+213">Argélia +213</option>
+                    <option value="+1-684">Samoa Americana +1-684</option>
+                    <option value="+376">Andorra +376</option>
+                    <option value="+244">Angola +244</option>
+                    <option value="+1-264">Anguilla +1-264</option>
+                    <option value="+672">Antártica +672</option>
+                    <option value="+1-268">Antígua e Barbuda +1-268</option>
+                    <option value="+54">Argentina +54</option>
+                    <option value="+374">Armênia +374</option>
+                    <option value="+297">Aruba +297</option>
+                    <option value="+61">Austrália +61</option>
+                    <option value="+43">Áustria +43</option>
+                    <option value="+994">Azerbaijão +994</option>
+                    <option value="+1-242">Bahamas +1-242</option>
+                    <option value="+973">Bahrein +973</option>
+                    <option value="+880">Bangladesh +880</option>
+                    <option value="+1-246">Barbados +1-246</option>
+                    <option value="+375">Belarus +375</option>
+                    <option value="+32">Bélgica +32</option>
+                    <option value="+501">Belize +501</option>
+                    <option value="+229">Benin +229</option>
+                    <option value="+1-441">Bermudas +1-441</option>
+                    <option value="+975">Butão +975</option>
+                    <option value="+591">Bolívia +591</option>
+                    <option value="+387">Bósnia e Herzegovina +387</option>
+                    <option value="+267">Botsuana +267</option>
+                    <option value="+673">Brunei +673</option>
+                    <option value="+359">Bulgária +359</option>
+                    <option value="+226">Burkina Faso +226</option>
+                    <option value="+257">Burundi +257</option>
+                    <option value="+855">Camboja +855</option>
+                    <option value="+237">Camarões +237</option>
+                    <option value="+1">Canadá +1</option>
+                    <option value="+238">Cabo Verde +238</option>
+                    <option value="+1-345">Ilhas Cayman +1-345</option>
+                    <option value="+236">República Centro-Africana +236</option>
+                    <option value="+235">Chade +235</option>
+                    <option value="+56">Chile +56</option>
+                    <option value="+86">China +86</option>
+                    <option value="+57">Colômbia +57</option>
+                    <option value="+269">Comores +269</option>
+                    <option value="+242">Congo +242</option>
+                    <option value="+243">
+                      República Democrática do Congo +243
+                    </option>
+                    <option value="+682">Ilhas Cook +682</option>
+                    <option value="+506">Costa Rica +506</option>
+                    <option value="+225">Costa do Marfim +225</option>
+                    <option value="+385">Croácia +385</option>
+                    <option value="+53">Cuba +53</option>
+                    <option value="+599">Curaçao +599</option>
+                    <option value="+357">Chipre +357</option>
+                    <option value="+420">República Tcheca +420</option>
+                    <option value="+45">Dinamarca +45</option>
+                    <option value="+253">Djibouti +253</option>
+                    <option value="+1-767">Dominica +1-767</option>
+                    <option value="+1-809">República Dominicana +1-809</option>
+                    <option value="+670">Timor-Leste +670</option>
+                    <option value="+593">Equador +593</option>
+                    <option value="+20">Egito +20</option>
+                    <option value="+503">El Salvador +503</option>
+                    <option value="+240">Guiné Equatorial +240</option>
+                    <option value="+291">Eritreia +291</option>
+                    <option value="+372">Estônia +372</option>
+                    <option value="+251">Etiópia +251</option>
+                    <option value="+500">Ilhas Malvinas +500</option>
+                    <option value="+298">Ilhas Faroe +298</option>
+                    <option value="+679">Fiji +679</option>
+                    <option value="+358">Finlândia +358</option>
+                    <option value="+33">França +33</option>
+                    <option value="+594">Guiana Francesa +594</option>
+                    <option value="+689">Polinésia Francesa +689</option>
+                    <option value="+241">Gabão +241</option>
+                    <option value="+220">Gâmbia +220</option>
+                    <option value="+995">Geórgia +995</option>
+                    <option value="+49">Alemanha +49</option>
+                    <option value="+233">Gana +233</option>
+                    <option value="+350">Gibraltar +350</option>
+                    <option value="+30">Grécia +30</option>
+                    <option value="+299">Groenlândia +299</option>
+                    <option value="+1-473">Granada +1-473</option>
+                    <option value="+590">Guadalupe +590</option>
+                    <option value="+1-671">Guam +1-671</option>
+                    <option value="+502">Guatemala +502</option>
+                    <option value="+44-1481">Guernsey +44-1481</option>
+                    <option value="+224">Guiné +224</option>
+                    <option value="+245">Guiné-Bissau +245</option>
+                    <option value="+592">Guiana +592</option>
+                    <option value="+509">Haiti +509</option>
+                    <option value="+504">Honduras +504</option>
+                    <option value="+852">Hong Kong +852</option>
+                    <option value="+36">Hungria +36</option>
+                    <option value="+354">Islândia +354</option>
+                    <option value="+91">Índia +91</option>
+                    <option value="+62">Indonésia +62</option>
+                    <option value="+98">Irã +98</option>
+                    <option value="+964">Iraque +964</option>
+                    <option value="+353">Irlanda +353</option>
+                    <option value="+44-1624">Ilha de Man +44-1624</option>
+                    <option value="+972">Israel +972</option>
+                    <option value="+39">Itália +39</option>
+                    <option value="+1-876">Jamaica +1-876</option>
+                    <option value="+81">Japão +81</option>
+                    <option value="+44-1534">Jersey +44-1534</option>
+                    <option value="+962">Jordânia +962</option>
+                    <option value="+7">Cazaquistão +7</option>
+                    <option value="+254">Quênia +254</option>
+                    <option value="+686">Kiribati +686</option>
+                    <option value="+965">Kuwait +965</option>
+                    <option value="+996">Quirguistão +996</option>
+                    <option value="+856">Laos +856</option>
+                    <option value="+371">Letônia +371</option>
+                    <option value="+961">Líbano +961</option>
+                    <option value="+266">Lesoto +266</option>
+                    <option value="+231">Libéria +231</option>
+                    <option value="+218">Líbia +218</option>
+                    <option value="+423">Liechtenstein +423</option>
+                    <option value="+370">Lituânia +370</option>
+                    <option value="+352">Luxemburgo +352</option>
+                    <option value="+853">Macau +853</option>
+                    <option value="+389">Macedônia +389</option>
+                    <option value="+261">Madagascar +261</option>
+                    <option value="+265">Malawi +265</option>
+                    <option value="+60">Malásia +60</option>
+                    <option value="+960">Maldivas +960</option>
+                    <option value="+223">Mali +223</option>
+                    <option value="+356">Malta +356</option>
+                    <option value="+692">Ilhas Marshall +692</option>
+                    <option value="+596">Martinica +596</option>
+                    <option value="+222">Mauritânia +222</option>
+                    <option value="+230">Maurício +230</option>
+                    <option value="+262">Mayotte +262</option>
+                    <option value="+52">México +52</option>
+                    <option value="+691">Micronésia +691</option>
+                    <option value="+373">Moldávia +373</option>
+                    <option value="+377">Mônaco +377</option>
+                    <option value="+976">Mongólia +976</option>
+                    <option value="+382">Montenegro +382</option>
+                    <option value="+1-664">Montserrat +1-664</option>
+                    <option value="+212">Marrocos +212</option>
+                    <option value="+258">Moçambique +258</option>
+                    <option value="+95">Mianmar +95</option>
+                    <option value="+264">Namíbia +264</option>
+                    <option value="+674">Nauru +674</option>
+                    <option value="+977">Nepal +977</option>
+                    <option value="+31">Países Baixos +31</option>
+                    <option value="+599">Caribe Neerlandês +599</option>
+                    <option value="+687">Nova Caledônia +687</option>
+                    <option value="+64">Nova Zelândia +64</option>
+                    <option value="+505">Nicarágua +505</option>
+                    <option value="+227">Níger +227</option>
+                    <option value="+234">Nigéria +234</option>
+                    <option value="+683">Niue +683</option>
+                    <option value="+672">Ilha Norfolk +672</option>
+                    <option value="+850">Coreia do Norte +850</option>
+                    <option value="+47">Noruega +47</option>
+                    <option value="+968">Omã +968</option>
+                    <option value="+92">Paquistão +92</option>
+                    <option value="+680">Palau +680</option>
+                    <option value="+970">Palestina +970</option>
+                    <option value="+507">Panamá +507</option>
+                    <option value="+675">Papua-Nova Guiné +675</option>
+                    <option value="+595">Paraguai +595</option>
+                    <option value="+51">Peru +51</option>
+                    <option value="+63">Filipinas +63</option>
+                    <option value="+48">Polônia +48</option>
+                    <option value="+351">Portugal +351</option>
+                    <option value="+1-787">Porto Rico +1-787</option>
+                    <option value="+974">Catar +974</option>
+                    <option value="+262">Reunião +262</option>
+                    <option value="+40">Romênia +40</option>
+                    <option value="+7">Rússia +7</option>
+                    <option value="+250">Ruanda +250</option>
+                    <option value="+590">Saint Barthélemy +590</option>
+                    <option value="+290">Santa Helena +290</option>
+                    <option value="+1-869">São Cristóvão e Neves +1-869</option>
+                    <option value="+1-758">Santa Lúcia +1-758</option>
+                    <option value="+590">São Martinho +590</option>
+                    <option value="+508">Saint Pierre e Miquelon +508</option>
+                    <option value="+1-784">
+                      São Vicente e Granadinas +1-784
+                    </option>
+                    <option value="+685">Samoa +685</option>
+                    <option value="+378">San Marino +378</option>
+                    <option value="+239">São Tomé e Príncipe +239</option>
+                    <option value="+966">Arábia Saudita +966</option>
+                    <option value="+221">Senegal +221</option>
+                    <option value="+381">Sérvia +381</option>
+                    <option value="+248">Seychelles +248</option>
+                    <option value="+232">Serra Leoa +232</option>
+                    <option value="+65">Singapura +65</option>
+                    <option value="+421">Eslováquia +421</option>
+                    <option value="+386">Eslovênia +386</option>
+                    <option value="+677">Ilhas Salomão +677</option>
+                    <option value="+252">Somália +252</option>
+                    <option value="+27">África do Sul +27</option>
+                    <option value="+82">Coreia do Sul +82</option>
+                    <option value="+211">Sudão do Sul +211</option>
+                    <option value="+34">Espanha +34</option>
+                    <option value="+94">Sri Lanka +94</option>
+                    <option value="+249">Sudão +249</option>
+                    <option value="+597">Suriname +597</option>
+                    <option value="+47">Svalbard e Jan Mayen +47</option>
+                    <option value="+268">Essuatíni +268</option>
+                    <option value="+46">Suécia +46</option>
+                    <option value="+41">Suíça +41</option>
+                    <option value="+963">Síria +963</option>
+                    <option value="+886">Taiwan +886</option>
+                    <option value="+992">Tajiquistão +992</option>
+                    <option value="+255">Tanzânia +255</option>
+                    <option value="+66">Tailândia +66</option>
+                    <option value="+228">Togo +228</option>
+                    <option value="+690">Tokelau +690</option>
+                    <option value="+676">Tonga +676</option>
+                    <option value="+1-868">Trinidad e Tobago +1-868</option>
+                    <option value="+216">Tunísia +216</option>
+                    <option value="+90">Turquia +90</option>
+                    <option value="+993">Turcomenistão +993</option>
+                    <option value="+688">Tuvalu +688</option>
+                    <option value="+1-649">Ilhas Turks e Caicos +1-649</option>
+                    <option value="+256">Uganda +256</option>
+                    <option value="+380">Ucrânia +380</option>
+                    <option value="+971">Emirados Árabes Unidos +971</option>
+                    <option value="+44">Reino Unido +44</option>
+                    <option value="+1">Estados Unidos +1</option>
+                    <option value="+598">Uruguai +598</option>
+                    <option value="+998">Uzbequistão +998</option>
+                    <option value="+678">Vanuatu +678</option>
+                    <option value="+379">Vaticano +379</option>
+                    <option value="+58">Venezuela +58</option>
+                    <option value="+84">Vietnã +84</option>
+                    <option value="+681">Wallis e Futuna +681</option>
+                    <option value="+212">Saara Ocidental +212</option>
+                    <option value="+967">Iémen +967</option>
+                    <option value="+260">Zâmbia +260</option>
+                    <option value="+263">Zimbábue +263</option>
+                  </select>
+                </div>
+
+                <!-- Campo de telefone -->
+                <div class="w-3/4">
+                  <input
+                    type="tel"
+                    name="telefone"
+                    id="telefone"
+                    x-model="telefone"
+                    placeholder="Seu número de WhatsApp com DDD"
+                    x-mask:dynamic="$input.length <= 14 ? '(99) 9999-9999' : '(99) 99999-9999'"
+                    class="block w-full px-4 py-3 text-base text-gray-900 bg-white border border-green-900 rounded-xl focus:outline-none focus:border-green-600 focus:ring-1 focus:ring-green-600"
+                  />
+                  <p
+                    x-show="errors.telefone"
+                    class="text-red-600 text-sm mt-1"
+                    x-text="errors.telefone"
+                  ></p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="mt-2">
+                <textarea
+                  name="observacoes"
+                  id="observacoes"
+                  placeholder="Qual a sua dúvida?"
+                  rows="2"
+                  x-model="observacoes"
+                  class="block w-full px-4 py-4 text-base text-gray-900 bg-white border border-gray-200 resize-y rounded-xl focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
+                ></textarea>
+              </div>
+            </div>
+
+            <input type="hidden" name="url" />
+
+            <button
+              type="submit"
+              class="block w-full items-center justify-center px-6 py-3 text-lg uppercase font-bold text-[#d7cb89] transition-all duration-200 bg-italianne-950 border border-transparent rounded-xl hover:bg-italianne-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-900"
+            >
+              Quero saber mais
+            </button>
+          </form>
+        </div>
+
+        <div class="flex flex-col items-center justify-center">
+          <img src="logo-dark.png" alt="" class="h-24 mt-24" />
+          <p class="text-white mt-6">
+            Av. Visc. de Guarapuava, 2764<br />Sala 1404 - Centro - Curitiba -
+            PR
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function formValidation() {
+        return {
+          fullName: "",
+          email: "",
+          telefone: "",
+          grauParentesco: "",
+          observacoes: "",
+          errors: {},
+
+          validateForm() {
+            this.errors = {};
+
+            if (!this.fullName) {
+              this.errors.fullName = "O nome é obrigatório";
+            }
+
+            if (!this.email) {
+              this.errors.email = "O e-mail é obrigatório";
+            } else if (!this.validEmail(this.email)) {
+              this.errors.email = "Digite um e-mail válido";
+            }
+
+            if (!this.telefone) {
+              this.errors.telefone = "O telefone é obrigatório";
+            }
+
+            if (!this.grauParentesco) {
+              this.errors.grauParentesco = "Selecione um grau de parentesco";
+            }
+
+            if (Object.keys(this.errors).length === 0) {
+              this.$el.submit();
+            }
+          },
+
+          validEmail(email) {
+            const re =
+              /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@(([^<>()[\]\\.,;:\s@"]+\.[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+          },
+        };
+      }
+    </script>
 
     <script>
       const url = window.location.href;
@@ -639,17 +1534,13 @@
 
     <!-- FOOTER -->
 
-    <footer class="py-12 sm:py-16 bg-green-950">
+    <footer class="py-12 sm:py-16 bg-italianne-950">
       <div class="px-6 mx-auto sm:px-8 lg:px-12 max-w-8åxl">
         <div
           class="grid items-center grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-3"
         >
           <div class="md:order-1">
-            <img
-              class="w-auto h-12"
-              src="https://italianne.com/wp-content/uploads/2022/02/logo_italianne_footer.png"
-              alt=""
-            />
+            <img class="w-auto h-12" src="logo-dark.png" alt="" />
           </div>
 
           <div class="md:order-3">
@@ -691,7 +1582,6 @@
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 448 512"
                   >
-                    <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                     <path
                       d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
                     />
@@ -734,6 +1624,49 @@
     </footer>
 
     <!-- MODAL -->
+
+    <script>
+      function whatsappFormValidation() {
+        return {
+          nameWhatsapp: "",
+          emailWhatsapp: "",
+          whatsappWhatsapp: "",
+          errors: {},
+
+          // Função de validação do formulário
+          validateForm() {
+            this.errors = {};
+
+            if (!this.nameWhatsapp) {
+              this.errors.nameWhatsapp = "O nome é obrigatório";
+            }
+
+            if (!this.emailWhatsapp) {
+              this.errors.emailWhatsapp = "O e-mail é obrigatório";
+            } else if (!this.validEmail(this.emailWhatsapp)) {
+              this.errors.emailWhatsapp = "Digite um e-mail válido";
+            }
+
+            if (!this.whatsappWhatsapp) {
+              this.errors.whatsappWhatsapp =
+                "O número do WhatsApp é obrigatório";
+            }
+
+            // Submete o formulário apenas se não houver erros
+            if (Object.keys(this.errors).length === 0) {
+              this.$el.submit();
+            }
+          },
+
+          // Função para validar o e-mail
+          validEmail(email) {
+            const re =
+              /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@(([^<>()[\]\\.,;:\s@"]+\.[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+          },
+        };
+      }
+    </script>
 
     <script type="module" src="/main.js"></script>
   </body>

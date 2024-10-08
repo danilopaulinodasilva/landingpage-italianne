@@ -16,7 +16,6 @@
     "vite": "^5.4.1"
   },
   "dependencies": {
-    "@alpinejs/mask": "^3.14.1",
     "alpinejs": "^3.14.1",
     "serve": "^14.2.3",
     "vite-plugin-html": "^3.2.2"

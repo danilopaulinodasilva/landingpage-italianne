@@ -152,59 +152,84 @@
                       </div>
 
                       <form
+                        x-data="whatsappFormValidation()"
                         action="https://superstorm-rest-italianne.oofut8.easypanel.host/save/google/sheets/whatsapp"
                         method="POST"
                         class="p-6"
+                        @submit.prevent="validateForm"
                       >
                         <div class="space-y-4">
                           <div>
                             <label
-                              for="name"
+                              for="nameWhatsapp"
                               class="text-sm font-bold text-gray-900"
-                              >Nome</label
                             >
+                              Nome <span class="text-red-600">*</span>
+                            </label>
                             <div class="mt-1">
                               <input
                                 type="text"
                                 id="nameWhatsapp"
                                 name="nameWhatsapp"
+                                x-model="nameWhatsapp"
                                 placeholder=""
                                 class="block w-full px-4 py-3 placeholder-gray-500 border border-gray-300 rounded-lg focus:ring-indigo-600 focus:border-indigo-600 sm:text-sm caret-indigo-600"
                               />
+                              <p
+                                x-show="errors.nameWhatsapp"
+                                class="text-red-600 text-sm mt-1"
+                                x-text="errors.nameWhatsapp"
+                              ></p>
                             </div>
                           </div>
 
                           <div>
                             <label
-                              for="email"
+                              for="emailWhatsapp"
                               class="text-sm font-bold text-gray-900"
-                              >E-mail</label
                             >
+                              E-mail <span class="text-red-600">*</span>
+                            </label>
                             <div class="mt-1">
                               <input
                                 type="email"
                                 id="emailWhatsapp"
                                 name="emailWhatsapp"
+                                x-model="emailWhatsapp"
                                 placeholder=""
                                 class="block w-full px-4 py-3 placeholder-gray-500 border border-gray-300 rounded-lg focus:ring-indigo-600 focus:border-indigo-600 sm:text-sm caret-indigo-600"
                               />
+                              <p
+                                x-show="errors.emailWhatsapp"
+                                class="text-red-600 text-sm mt-1"
+                                x-text="errors.emailWhatsapp"
+                              ></p>
                             </div>
                           </div>
 
                           <div>
                             <label
-                              for="role"
+                              for="whatsappWhatsapp"
                               class="text-sm font-bold text-gray-900"
-                              >Número do WhatsApp</label
                             >
+                              Número do WhatsApp
+                              <span class="text-red-600">*</span>
+                            </label>
                             <div class="mt-1">
                               <input
                                 type="tel"
                                 id="whatsappWhatsapp"
                                 name="whatsappWhatsapp"
+                                x-model="whatsappWhatsapp"
+                                x-mask:dynamic="$input.length <= 14 ? '(99) 9999-9999' : '(99) 99999-9999'"
                                 placeholder=""
                                 class="block w-full px-4 py-3 placeholder-gray-500 border border-gray-300 rounded-lg focus:ring-indigo-600 focus:border-indigo-600 sm:text-sm caret-indigo-600"
                               />
+                              <p
+                                x-show="errors.whatsappWhatsapp"
+                                class="text-red-600 text-sm mt-1"
+                                x-text="errors.whatsappWhatsapp"
+                              ></p>
                             </div>
                           </div>
                         </div>
@@ -335,6 +360,49 @@
     </footer>
 
     <!-- MODAL -->
+
+    <script>
+      function whatsappFormValidation() {
+        return {
+          nameWhatsapp: "",
+          emailWhatsapp: "",
+          whatsappWhatsapp: "",
+          errors: {},
+
+          // Função de validação do formulário
+          validateForm() {
+            this.errors = {};
+
+            if (!this.nameWhatsapp) {
+              this.errors.nameWhatsapp = "O nome é obrigatório";
+            }
+
+            if (!this.emailWhatsapp) {
+              this.errors.emailWhatsapp = "O e-mail é obrigatório";
+            } else if (!this.validEmail(this.emailWhatsapp)) {
+              this.errors.emailWhatsapp = "Digite um e-mail válido";
+            }
+
+            if (!this.whatsappWhatsapp) {
+              this.errors.whatsappWhatsapp =
+                "O número do WhatsApp é obrigatório";
+            }
+
+            // Submete o formulário apenas se não houver erros
+            if (Object.keys(this.errors).length === 0) {
+              this.$el.submit();
+            }
+          },
+
+          // Função para validar o e-mail
+          validEmail(email) {
+            const re =
+              /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@(([^<>()[\]\\.,;:\s@"]+\.[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+          },
+        };
+      }
+    </script>
 
     <script type="module" src="main.js"></script>
   </body>
