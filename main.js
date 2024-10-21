@@ -4,7 +4,5 @@ import mask from "@alpinejs/mask";
 
 window.Alpine = Alpine;
 
-// Ativar o plugin de máscara
 Alpine.plugin(mask);
-
 Alpine.start();

@@ -5,10 +5,42 @@
     <link rel="icon" type="image/png" href="favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Italianne - Consultoria e Assessoria para Cidadania Italiana</title>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KM2QPTJV");
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
 
   <body>
-    <div class="bg-[#d8cfc5]">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KM2QPTJV"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div
+      style="
+        background: #cec8c3 url('https://italianne.com/lp/Banner_001.png');
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: cover;
+      "
+    >
       <header class="py-4 md:py-6">
         <div class="container px-4 mx-auto sm:px-6 lg:px-8">
           <div class="flex items-center justify-between">
@@ -18,27 +50,12 @@
                 title=""
                 class="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
               >
-                <img class="w-auto h-32 mt-12" src="logo.png" alt="" />
+                <img
+                  class="w-auto sm:h-56 h-24 sm:mt-12 mt-6"
+                  src="logo.png"
+                  alt="Logo Italianne"
+                />
               </a>
-            </div>
-
-            <div class="flex lg:hidden">
-              <button type="button" class="text-gray-900">
-                <svg
-                  class="w-7 h-7"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  ></path>
-                </svg>
-              </button>
             </div>
           </div>
         </div>
@@ -51,12 +68,15 @@
           >
             <div>
               <form
-                x-data="formValidation()"
+                x-data="formValidation2()"
                 action="https://superstorm-rest-italianne.oofut8.easypanel.host/send/email"
                 method="POST"
                 @submit.prevent="validateForm"
                 class="space-y-3"
               >
+                <input type="hidden" name="url" />
+                <input type="hidden" name="ip_address" />
+
                 <div>
                   <h3
                     class="text-2xl mb-6 text-italianne-950 font-bold uppercase"
@@ -418,8 +438,6 @@
                   </div>
                 </div>
 
-                <input type="hidden" name="url" />
-
                 <button
                   type="submit"
                   class="block w-full items-center justify-center px-6 py-3 text-lg uppercase font-bold text-[#d7cb89] transition-all duration-200 bg-italianne-950 border border-transparent rounded-xl hover:bg-italianne-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-900"
@@ -499,10 +517,12 @@
                     <form
                       x-data="whatsappFormValidation()"
                       action="https://superstorm-rest-italianne.oofut8.easypanel.host/save/google/sheets/whatsapp"
+                      @submit.prevent="validateForm"
                       method="POST"
                       class="p-4"
-                      @submit.prevent="validateForm"
                     >
+                      <input type="hidden" name="url" />
+
                       <div class="space-y-4">
                         <div>
                           <label
@@ -599,7 +619,7 @@
 
     <!-- QUEM SOMOS -->
 
-    <section class="pb-10 bg-[#d8cfc5] sm:pb-16 lg:pb-24">
+    <section class="pb-10 bg-[#cec8c3] sm:pb-16 lg:pb-24">
       <div class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
         <div class="grid items-start md:grid-cols-2 gap-y-10 md:gap-x-20">
           <div class="flex justify-start sm:pr-0 order-2 sm:order-1">
@@ -705,14 +725,16 @@
           </div>
 
           <div>
-            <p class="text-2xl uppercase font-bold text-italianne-950 mb-3">
+            <p class="text-xl uppercase font-thin text-italianne-950 mb-3">
               Quem somos
             </p>
-            <h2
+
+            <p
               class="text-3xl font-bold leading-tight text-italianne-950 sm:text-4xl lg:text-5xl"
             >
               Sua porta de entrada para a cidadania italiana!
-            </h2>
+            </p>
+
             <p class="mt-6 text-xl text-italianne-950 leading-10">
               Somos a Italianne, sua parceira de confiança na jornada para
               conquistar a cidadania italiana. Com anos de experiência e um time
@@ -726,7 +748,7 @@
 
     <!-- ETAPAS -->
 
-    <section class="pb-10 bg-[#d8cfc5] sm:pb-16 lg:pb-24">
+    <section class="pb-10 bg-[#cec8c3] sm:pb-16 lg:pb-24">
       <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="flex-col items-center justify-center mx-auto text-center">
           <h2
@@ -791,17 +813,20 @@
     </section>
 
     <section
-      class="flex flex-col justify-center items-center bg-[#d8cfc5] pb-10"
+      class="flex flex-col justify-center items-center bg-[#cec8c3] pb-10"
     >
       <!-- FORM -->
 
       <form
-        x-data="formValidation()"
+        x-data="formValidation2()"
         action="https://superstorm-rest-italianne.oofut8.easypanel.host/send/email"
         method="POST"
         @submit.prevent="validateForm"
         class="space-y-3"
       >
+        <input type="hidden" name="url" />
+        <input type="hidden" name="ip_address" />
+
         <div>
           <h3
             class="text-2xl mb-6 text-italianne-950 font-bold uppercase text-center"
@@ -854,7 +879,7 @@
               name="grauParentesco"
               id="grauParentesco"
             >
-              <option value="" disabled selected>Grau de Parentesco</option>
+              <option value="">Grau de Parentesco</option>
               <option value="Filho(a)">Filho(a)</option>
               <option value="Neto(a)">Neto(a)</option>
               <option value="Bisneto(a)">Bisneto(a)</option>
@@ -1138,8 +1163,6 @@
           </div>
         </div>
 
-        <input type="hidden" name="url" />
-
         <button
           type="submit"
           class="block w-full items-center justify-center px-6 py-3 text-lg uppercase font-bold text-[#d7cb89] transition-all duration-200 bg-italianne-950 border border-transparent rounded-xl hover:bg-italianne-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-900"
@@ -1271,6 +1294,9 @@
             class="space-y-3"
             id="formServices"
           >
+            <input type="hidden" name="url" />
+            <input type="hidden" name="ip_address" />
+
             <div>
               <h3
                 class="text-2xl mb-6 text-white font-bold uppercase text-center"
@@ -1322,10 +1348,10 @@
             <div>
               <div class="mt-2">
                 <select
-                  x-model="grauParentesco"
+                  x-model="servico"
                   class="block w-full px-4 py-3 text-base text-gray-400 bg-white border border-green-900 rounded-xl focus:outline-none focus:border-green-600 focus:ring-1 focus:ring-green-600"
-                  name="grauParentesco"
-                  id="grauParentesco"
+                  name="servico"
+                  id="servico"
                 >
                   <option value="" disabled selected>
                     Escolha o serviço que deseja informações
@@ -1363,9 +1389,9 @@
                   </option>
                 </select>
                 <p
-                  x-show="errors.grauParentesco"
+                  x-show="errors.servico"
                   class="text-red-600 text-sm mt-1"
-                  x-text="errors.grauParentesco"
+                  x-text="errors.servico"
                 ></p>
               </div>
             </div>
@@ -1655,8 +1681,6 @@
               </div>
             </div>
 
-            <input type="hidden" name="url" />
-
             <button
               type="submit"
               class="block w-full items-center justify-center px-6 py-3 text-lg uppercase font-bold text-[#d7cb89] transition-all duration-200 bg-italianne-950 border border-transparent rounded-xl hover:bg-italianne-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-900"
@@ -1682,11 +1706,56 @@
           fullName: "",
           email: "",
           telefone: "",
+          servico: "",
+          observacoes: "",
+          errors: {},
+
+          validateForm() {
+            // Captura a URL atual sempre que o formulário for validado
+            this.errors = {};
+
+            if (!this.fullName) {
+              this.errors.fullName = "O nome é obrigatório";
+            }
+
+            if (!this.email) {
+              this.errors.email = "O e-mail é obrigatório";
+            } else if (!this.validEmail(this.email)) {
+              this.errors.email = "Digite um e-mail válido";
+            }
+
+            if (!this.telefone) {
+              this.errors.telefone = "O telefone é obrigatório";
+            }
+
+            if (!this.servico) {
+              this.errors.servico = "Selecione um serviço";
+            }
+
+            if (Object.keys(this.errors).length === 0) {
+              this.$el.submit();
+            }
+          },
+
+          validEmail(email) {
+            const re =
+              /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@(([^<>()[\]\\.,;:\s@"]+\.[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+          },
+        };
+      }
+
+      function formValidation2() {
+        return {
+          fullName: "",
+          email: "",
+          telefone: "",
           grauParentesco: "",
           observacoes: "",
           errors: {},
 
           validateForm() {
+            // Captura a URL atual sempre que o formulário for validado
             this.errors = {};
 
             if (!this.fullName) {
@@ -1704,7 +1773,7 @@
             }
 
             if (!this.grauParentesco) {
-              this.errors.grauParentesco = "Selecione um grau de parentesco";
+              this.errors.grauParentesco = "Selecione o seu grau de parentesco";
             }
 
             if (Object.keys(this.errors).length === 0) {
@@ -1719,11 +1788,6 @@
           },
         };
       }
-    </script>
-
-    <script>
-      const url = window.location.href;
-      document.querySelector('input[name="url"]').value = url;
     </script>
 
     <!-- FOOTER -->
@@ -1860,6 +1924,28 @@
           },
         };
       }
+    </script>
+
+    <script>
+      // Seleciona todos os campos com name="url"
+      const urlFields = document.querySelectorAll('input[name="url"]');
+      const ipAddressFields = document.querySelectorAll(
+        'input[name="ip_address"]'
+      );
+
+      // Para cada campo, define o valor como window.location.href
+      urlFields.forEach((field) => {
+        field.value = window.location.href;
+      });
+
+      // Para cada campo, faz uma requisição para o ipify.org e define o valor como o IP retornado
+      ipAddressFields.forEach((field) => {
+        fetch("https://api.ipify.org?format=json")
+          .then((response) => response.json())
+          .then((data) => {
+            field.value = data.ip;
+          });
+      });
     </script>
 
     <script type="module" src="/main.js"></script>
